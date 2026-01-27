@@ -701,54 +701,44 @@ export const influencers: Influencer[] = [
 ];
 
 export const caseStudies: CaseStudy[] = [
-
   {
-    "id": "1",
-    "client": "HOMAG",
-    "title": "Benberger x HOMAG",
-    "description": "Detaillierte Case Study als PDF verfügbar.",
-    "stats": [],
-    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Benberger%20x%20HOMAG",
-    "tags": [
-      "PDF Case"
-    ],
-    "pdfUrl": "/vi/cases/benberger_x_homag.pdf"
+    id: '1',
+    client: 'HOMAG',
+    title: 'Benberger x HOMAG',
+    description: 'Eine Partnerschaft zwischen Ben Berger und der HOMAG AG, die Innovation im Handwerk beleuchtet. Der Case demonstriert, wie modernes Schreinerhandwerk durch technologischen Fortschritt wettbewerbsfähig bleibt und verbindet Tradition mit High-Tech-Lösungen. Ein Paradebeispiel für die authentische Inszenierung von B2B-Themen im Social-Media-Kontext.',
+    stats: [],
+    imageUrl: '/vi/images/cases/benberger_x_homag.png',
+    tags: ['Handwerk', 'Innovation', 'B2B'],
+    pdfUrl: '/vi/cases/benberger_x_homag.pdf'
   },
   {
-    "id": "2",
-    "client": "PDR",
-    "title": "PDR x Vertical Influence",
-    "description": "Detaillierte Case Study als PDF verfügbar.",
-    "stats": [],
-    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=PDR%20x%20Vertical%20Influence",
-    "tags": [
-      "PDF Case"
-    ],
-    "pdfUrl": "/vi/cases/pdr_x_vertical_influence_3.pdf"
+    id: '2',
+    client: 'PDR',
+    title: 'PDR x Vertical Influence',
+    description: 'Strategischer Kampagnenflight für PDR mit Fokus auf gezielter Creator-Auswahl und Performance-Erwartungshaltung. Der Case gewährt Einblicke in die strategische Herleitung, die Auswahl passender Influencer und den Split der Maßnahmen, um maximale Relevanz in der Zielgruppe zu erzeugen.',
+    stats: [],
+    imageUrl: '/vi/images/cases/pdr_x_vertical_influence_3.png',
+    tags: ['Strategy', 'Creator Selection', 'Performance'],
+    pdfUrl: '/vi/cases/pdr_x_vertical_influence_3.pdf'
   },
   {
-    "id": "3",
-    "client": "Juizy Wow",
-    "title": "Wow Da Phone",
-    "description": "Detaillierte Case Study als PDF verfügbar.",
-    "stats": [],
-    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Wow%20Da%20Phone",
-    "tags": [
-      "PDF Case"
-    ],
-    "pdfUrl": "/vi/cases/wow_da_phone.pdf"
+    id: '3',
+    client: 'Vodafone',
+    title: 'Wow Da Phone - Gen-Z Targeting',
+    description: 'Ein Hardware-basiertes Content-Format speziell für die Gen-Z. Da 21% der Zielgruppe TikTok als Suchmaschine nutzen, setzt Vodafone auf 9:16 Content, um dort präsent zu sein, wo die Kommunikation stattfindet. Der Case analysiert das Suchverhalten junger Zielgruppen und leitet daraus ein maßgeschneidertes Kommunikationskonzept ab.',
+    stats: [],
+    imageUrl: '/vi/images/cases/wow_da_phone.png',
+    tags: ['Gen-Z', 'TikTok', 'Strategy'],
+    pdfUrl: '/vi/cases/wow_da_phone.pdf'
   },
   {
-    "id": "4",
-    "client": "Wow",
-    "title": "Wow Case Study",
-    "description": "Detaillierte Case Study als PDF verfügbar.",
-    "stats": [],
-    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Wow%20Case%20Study",
-    "tags": [
-      "PDF Case"
-    ],
-    "pdfUrl": "/vi/cases/6597.pdf"
+    id: '4',
+    client: 'Google / Vodafone',
+    title: 'Pixel 10 Pro Endreport',
+    description: 'Detaillierter Endreport zur "Wow da Phone" Kampagne mit Fokus auf das Google Pixel 10 Pro. Zusammenfassung der Highlights, Performance-KPIs und Key-Learnings der Aktivierung. Zeigt auf, wie Tech-Produkte emotional und nativ in den Feed der Zielgruppe integriert werden können.',
+    stats: [],
+    imageUrl: '/vi/images/cases/6597.png',
+    tags: ['Tech', 'Report', 'Google Pixel'],
+    pdfUrl: '/vi/cases/6597.pdf'
   }
-
 ];
