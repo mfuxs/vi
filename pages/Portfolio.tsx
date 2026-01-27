@@ -8,7 +8,9 @@ const Portfolio: React.FC = () => {
   // Use 'All' or specific categories defined in data
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
-  const categories = ['All', 'Lifestyle', 'Tech', 'Handwerk'];
+  // Derive categories dynamically
+  const uniqueCategories = Array.from(new Set(influencers.map(i => i.category)));
+  const categories = ['All', ...uniqueCategories];
 
   const filteredInfluencers = activeCategory === 'All' 
     ? influencers 
@@ -20,7 +22,7 @@ const Portfolio: React.FC = () => {
         <div className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Talent</h1>
           <p className="text-zinc-500 max-w-2xl mx-auto mb-10">
-            Kuratiert, authentisch und reichweitenstark. Entdecken Sie unsere exklusive Auswahl an Content Creatorn aus den Bereichen Lifestyle, Tech und Handwerk.
+            Kuratiert, authentisch und reichweitenstark. Entdecken Sie unsere exklusive Auswahl an Content Creatorn.
           </p>
 
           {/* Filter Chips */}
@@ -94,14 +96,10 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
           {data.bio}
         </p>
 
-        <div className="grid grid-cols-2 gap-4 border-t border-zinc-100 pt-4 mt-auto">
+        <div className="border-t border-zinc-100 pt-4 mt-auto">
           <div>
-            <p className="text-[10px] text-zinc-400 uppercase tracking-wider font-semibold">Followers</p>
+            <p className="text-[10px] text-zinc-400 uppercase tracking-wider font-semibold">Total Followers</p>
             <p className="font-bold text-lg">{data.followers}</p>
-          </div>
-          <div>
-            <p className="text-[10px] text-zinc-400 uppercase tracking-wider font-semibold">Engagement</p>
-            <p className="font-bold text-lg">{data.engagement}</p>
           </div>
         </div>
 

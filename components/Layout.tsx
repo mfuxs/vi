@@ -84,8 +84,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-4 text-zinc-500">Connect</h3>
               <div className="flex space-x-6">
-                <a href="#" className="hover:text-zinc-300 transition-colors"><Instagram size={24} /></a>
-                <a href="#" className="hover:text-zinc-300 transition-colors"><Linkedin size={24} /></a>
+                <a href="https://www.instagram.com/vertical.influence/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors"><Instagram size={24} /></a>
+                <a href="https://www.linkedin.com/showcase/vi-vertical-influence/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors"><Linkedin size={24} /></a>
                 <a href="mailto:hello@vertical-influence.de" className="hover:text-zinc-300 transition-colors"><Mail size={24} /></a>
               </div>
               <p className="mt-8 text-zinc-500 text-xs">

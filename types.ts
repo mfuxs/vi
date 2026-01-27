@@ -3,12 +3,16 @@ export interface Influencer {
   name: string;
   handle: string;
   niche: string; // Displayed specific niche (e.g. "Fashion")
-  category: 'Tech' | 'Handwerk' | 'Lifestyle'; // Filter category
+  category: string; // Filter category
   followers: string;
-  engagement: string;
   imageUrl: string;
   bio: string;
-  platforms: ('Instagram' | 'TikTok' | 'YouTube' | 'Linkedin')[];
+  platforms: string[];
+  platformStats?: {
+    tiktok?: string;
+    instagram?: string;
+    youtube?: string;
+  };
 }
 
 export interface CaseStudy {

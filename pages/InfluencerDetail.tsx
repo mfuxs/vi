@@ -73,22 +73,46 @@ const InfluencerDetail: React.FC = () => {
                  <ExternalLink size={18} className="ml-2 opacity-50" />
                </a>
 
-               {/* Key Stats */}
-               <div className="grid grid-cols-2 gap-6 p-6 bg-zinc-50 rounded-2xl mb-10 border border-zinc-100">
-                  <div className="flex flex-col">
-                    <div className="flex items-center text-zinc-400 mb-2">
-                        <Users size={16} className="mr-2" />
-                        <p className="text-xs uppercase tracking-widest font-bold">Followers</p>
-                    </div>
-                    <p className="text-3xl md:text-4xl font-bold text-zinc-900">{influencer.followers}</p>
+               {/* Platform Stats */}
+               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                  <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
+                      <div className="flex items-center text-zinc-400 mb-1 space-x-2">
+                          <Users size={16} />
+                          <span className="text-xs uppercase tracking-widest font-bold">Total</span>
+                      </div>
+                      <p className="text-2xl font-bold text-zinc-900">{influencer.followers}</p>
                   </div>
-                  <div className="flex flex-col">
-                    <div className="flex items-center text-zinc-400 mb-2">
-                         <BarChart3 size={16} className="mr-2" />
-                        <p className="text-xs uppercase tracking-widest font-bold">Engagement</p>
-                    </div>
-                    <p className="text-3xl md:text-4xl font-bold text-zinc-900">{influencer.engagement}</p>
-                  </div>
+                  
+                  {influencer.platformStats?.tiktok && (
+                      <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
+                          <div className="flex items-center text-zinc-400 mb-1 space-x-2">
+                              {/* TikTok Icon */}
+                              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/></svg>
+                              <span className="text-xs uppercase tracking-widest font-bold">TikTok</span>
+                          </div>
+                          <p className="text-2xl font-bold text-zinc-900">{influencer.platformStats.tiktok}</p>
+                      </div>
+                  )}
+
+                  {influencer.platformStats?.instagram && (
+                      <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
+                          <div className="flex items-center text-zinc-400 mb-1 space-x-2">
+                              <Instagram size={16} />
+                              <span className="text-xs uppercase tracking-widest font-bold">IG</span>
+                          </div>
+                          <p className="text-2xl font-bold text-zinc-900">{influencer.platformStats.instagram}</p>
+                      </div>
+                  )}
+
+                  {influencer.platformStats?.youtube && (
+                      <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
+                          <div className="flex items-center text-zinc-400 mb-1 space-x-2">
+                              <Youtube size={16} />
+                              <span className="text-xs uppercase tracking-widest font-bold">YT</span>
+                          </div>
+                          <p className="text-2xl font-bold text-zinc-900">{influencer.platformStats.youtube}</p>
+                      </div>
+                  )}
                </div>
 
                {/* Description / Bio */}
