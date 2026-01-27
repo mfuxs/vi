@@ -594,26 +594,6 @@ export const influencers: Influencer[] = [
     }
   },
   {
-    "id": "32",
-    "name": "Muhammed_kaan",
-    "handle": "@muhammed_kaan",
-    "niche": "Tech",
-    "category": "Tech",
-    "followers": "450.7K",
-    "imageUrl": "/vi/images/creators/muhammed_kaan.jpeg",
-    "bio": "Tech creator and entrepreneur who shares practical technology tips, app recommendations, and gadget deals. He engages his audience through platforms like TikTok, Instagram, and YouTube, offering insights into the latest tech trends and tools. In addition to his content creation, Muhammed developed \"mukaan.de\", which provides users with curated tech tips and deals directly on their smartphones.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "407K",
-      "instagram": "17.7K",
-      "youtube": "26K"
-    }
-  },
-  {
     "id": "33",
     "name": "Paulascakefactory",
     "handle": "@paulascakefactory",
@@ -725,24 +705,6 @@ export const influencers: Influencer[] = [
     "platformStats": {
       "tiktok": "601K",
       "instagram": "87K"
-    }
-  },
-  {
-    "id": "39",
-    "name": "Sliiema",
-    "handle": "@sliiema",
-    "niche": "Tech",
-    "category": "Tech",
-    "followers": "377.4K",
-    "imageUrl": "/vi/images/creators/sliiema.jpeg",
-    "bio": "Creator specializing in tech with an interest in fitness, and fashion. He shares engaging content across platforms like TikTok, Instagram, and Twitch, offering insights into technology trends.",
-    "platforms": [
-      "TikTok",
-      "Instagram"
-    ],
-    "platformStats": {
-      "tiktok": "325.5K",
-      "instagram": "51.9K"
     }
   },
   {
