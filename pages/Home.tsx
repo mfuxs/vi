@@ -95,7 +95,7 @@ const Home: React.FC = () => {
 
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {featuredInfluencers.map(influencer => (
-                  <Link to="/portfolio" key={influencer.id} className="group block">
+                  <Link to={`/portfolio/${influencer.id}`} key={influencer.id} className="group block">
                     <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-zinc-100 mb-4 shadow-sm">
                         <img src={influencer.imageUrl} alt={influencer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>

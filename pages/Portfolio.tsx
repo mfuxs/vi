@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { influencers } from '../data';
+import { Link } from 'react-router-dom';
 import { Instagram, Youtube, Linkedin } from 'lucide-react';
 import { Influencer } from '../types';
 
@@ -59,7 +60,10 @@ const Portfolio: React.FC = () => {
 
 const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
   return (
-    <div className="group relative bg-white border border-zinc-100 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+    <Link 
+      to={`/portfolio/${data.id}`}
+      className="group relative bg-white border border-zinc-100 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+    >
       <div className="aspect-[4/5] overflow-hidden bg-zinc-100 relative">
         <img 
           src={data.imageUrl} 
@@ -71,9 +75,10 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
         </div>
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <button className="bg-white text-black px-6 py-3 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-zinc-100">
+            {/* Render as a span styled like a button to be valid HTML inside the Link anchor tag */}
+            <span className="bg-white text-black px-6 py-3 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-zinc-100">
                 View Profile
-            </button>
+            </span>
         </div>
       </div>
       
@@ -107,11 +112,10 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
            {data.platforms.includes('TikTok') && (
              <svg className="w-[18px] h-[18px] fill-zinc-400 hover:fill-black transition-colors" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/></svg>
            )}
-           {/* @ts-ignore - Lucide React type issue with some dynamic imports, but icon works */}
-           {data.platforms.includes('Linkedin' as any) && <Linkedin size={18} className="text-zinc-400 hover:text-black transition-colors" />}
+           {data.platforms.includes('Linkedin') && <Linkedin size={18} className="text-zinc-400 hover:text-black transition-colors" />}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

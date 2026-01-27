@@ -8,7 +8,7 @@ export interface Influencer {
   engagement: string;
   imageUrl: string;
   bio: string;
-  platforms: ('Instagram' | 'TikTok' | 'YouTube')[];
+  platforms: ('Instagram' | 'TikTok' | 'YouTube' | 'Linkedin')[];
 }
 
 export interface CaseStudy {

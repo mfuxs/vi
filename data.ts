@@ -99,7 +99,7 @@ export const influencers: Influencer[] = [
     engagement: '7.5%',
     imageUrl: 'https://picsum.photos/seed/sarah/800/1000',
     bio: 'Deep Dives in die Welt der Programmierung und künstlichen Intelligenz.',
-    platforms: ['YouTube', 'Linkedin' as any]
+    platforms: ['YouTube', 'Linkedin']
   }
 ];
 
