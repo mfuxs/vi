@@ -752,5 +752,35 @@ export const caseStudies: CaseStudy[] = [
     ],
     imageUrl: 'https://picsum.photos/seed/case3/1600/900',
     tags: ['Tech', 'Education']
+  },
+  {
+    id: '5',
+    client: 'HOMAG',
+    title: 'Benberger x HOMAG',
+    description: 'Detaillierte Case Study als PDF verfügbar.',
+    stats: [],
+    imageUrl: 'https://placehold.co/1600x900?text=Benberger%20x%20HOMAG',
+    tags: ['PDF Case'],
+    pdfUrl: '/vi/cases/benberger_homag.pdf'
+  },
+  {
+    id: '6',
+    client: 'PDR',
+    title: 'PDR x Vertical Influence',
+    description: 'Detaillierte Case Study als PDF verfügbar.',
+    stats: [],
+    imageUrl: 'https://placehold.co/1600x900?text=PDR%20x%20Vertical%20Influence',
+    tags: ['PDF Case'],
+    pdfUrl: '/vi/cases/pdr_vertical_influence.pdf'
+  },
+  {
+    id: '7',
+    client: 'Juizy Wow',
+    title: 'Wow Da Phone',
+    description: 'Detaillierte Case Study als PDF verfügbar.',
+    stats: [],
+    imageUrl: 'https://placehold.co/1600x900?text=Wow%20Da%20Phone',
+    tags: ['PDF Case'],
+    pdfUrl: '/vi/cases/wow_da_phone.pdf'
   }
 ];

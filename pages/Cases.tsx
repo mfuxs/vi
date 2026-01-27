@@ -58,10 +58,17 @@ const Cases: React.FC = () => {
                     ))}
                 </div>
 
-                <button className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
-                    View Full Case 
-                    <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
-                </button>
+                {item.pdfUrl ? (
+                    <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
+                        Download Case Study (PDF)
+                        <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
+                    </a>
+                ) : (
+                    <button className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
+                        View Full Case 
+                        <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
+                    </button>
+                )}
               </div>
 
             </div>

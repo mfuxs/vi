@@ -22,4 +22,5 @@ export interface CaseStudy {
   }[];
   imageUrl: string;
   tags: string[];
+  pdfUrl?: string;
 }
