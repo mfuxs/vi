@@ -7,6 +7,8 @@ import Cases from './pages/Cases';
 import Contact from './pages/Contact';
 import InfluencerDetail from './pages/InfluencerDetail';
 import NotFound from './pages/NotFound';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -30,6 +32,8 @@ const App: React.FC = () => {
           <Route path="/portfolio/:id" element={<InfluencerDetail />} />
           <Route path="/cases" element={<Cases />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

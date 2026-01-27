@@ -58,7 +58,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Footer */}
       <footer className="bg-zinc-900 text-white py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
               <h3 className="text-lg font-bold uppercase tracking-widest mb-4">Vertical Influence</h3>
               <p className="text-zinc-400 max-w-xs">
@@ -75,6 +75,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </ul>
             </div>
             <div>
+              <h3 className="text-sm font-semibold uppercase tracking-widest mb-4 text-zinc-500">Rechtliches</h3>
+              <ul className="space-y-3">
+                <li><Link to="/impressum" className="hover:text-zinc-300 transition-colors">Impressum</Link></li>
+                <li><Link to="/datenschutz" className="hover:text-zinc-300 transition-colors">Datenschutz</Link></li>
+              </ul>
+            </div>
+            <div>
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-4 text-zinc-500">Connect</h3>
               <div className="flex space-x-6">
                 <a href="#" className="hover:text-zinc-300 transition-colors"><Instagram size={24} /></a>
@@ -82,7 +89,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <a href="mailto:hello@vertical-influence.de" className="hover:text-zinc-300 transition-colors"><Mail size={24} /></a>
               </div>
               <p className="mt-8 text-zinc-500 text-xs">
-                © {new Date().getFullYear()} Vertical Influence by inSocial. All rights reserved.
+                © {new Date().getFullYear()} inSocial Media GmbH. All rights reserved.
               </p>
             </div>
           </div>
