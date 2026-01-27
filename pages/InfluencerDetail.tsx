@@ -43,8 +43,8 @@ const InfluencerDetail: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-            {/* Image Section - Sticky for better UX on desktop */}
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-100 shadow-sm sticky top-24">
+            {/* Image Section - Sticky only on Desktop (lg) */}
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-100 shadow-sm lg:sticky lg:top-24 self-start">
                <img 
                  src={influencer.imageUrl} 
                  alt={influencer.name} 
