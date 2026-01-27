@@ -701,86 +701,54 @@ export const influencers: Influencer[] = [
 ];
 
 export const caseStudies: CaseStudy[] = [
+
   {
-    id: '1',
-    client: 'GlowUp Cosmetics',
-    title: 'Summer Glow Campaign',
-    description: 'Eine 360-Grad Kampagne zur Einführung der neuen Summer-Collection. Fokus auf TikTok Challenges und High-Gloss Instagram Content.',
-    stats: [
-      { label: 'Total Reach', value: '15M+' },
-      { label: 'Engagement', value: '1.2M' },
-      { label: 'Sales Uplift', value: '+24%' }
+    "id": "1",
+    "client": "HOMAG",
+    "title": "Benberger x HOMAG",
+    "description": "Detaillierte Case Study als PDF verfügbar.",
+    "stats": [],
+    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Benberger%20x%20HOMAG",
+    "tags": [
+      "PDF Case"
     ],
-    imageUrl: 'https://picsum.photos/seed/case1/1600/900',
-    tags: ['Beauty', 'Product Launch']
+    "pdfUrl": "/vi/cases/benberger_x_homag.pdf"
   },
   {
-    id: '2',
-    client: 'WerkzeugPro',
-    title: 'Meisterklasse',
-    description: 'Launch der neuen Pro-Serie für Handwerker. Authentische Integrationen in DIY-Projekte von Top-Handwerks-Influencern.',
-    stats: [
-      { label: 'Impressions', value: '3.5M' },
-      { label: 'Profi-Feedback', value: 'Top Rated' },
-      { label: 'Shop Clicks', value: '45k' }
+    "id": "2",
+    "client": "PDR",
+    "title": "PDR x Vertical Influence",
+    "description": "Detaillierte Case Study als PDF verfügbar.",
+    "stats": [],
+    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=PDR%20x%20Vertical%20Influence",
+    "tags": [
+      "PDF Case"
     ],
-    imageUrl: 'https://picsum.photos/seed/case4/1600/900',
-    tags: ['Handwerk', 'B2C']
+    "pdfUrl": "/vi/cases/pdr_x_vertical_influence_3.pdf"
   },
   {
-    id: '3',
-    client: 'UrbanSneakers',
-    title: 'Walk The City',
-    description: 'Influencer-Events in 5 deutschen Großstädten kombiniert mit lokalem Content-Creation Hub.',
-    stats: [
-      { label: 'Impressions', value: '8.5M' },
-      { label: 'User Gen Content', value: '5k+' },
-      { label: 'CTR', value: '3.5%' }
+    "id": "3",
+    "client": "Juizy Wow",
+    "title": "Wow Da Phone",
+    "description": "Detaillierte Case Study als PDF verfügbar.",
+    "stats": [],
+    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Wow%20Da%20Phone",
+    "tags": [
+      "PDF Case"
     ],
-    imageUrl: 'https://picsum.photos/seed/case2/1600/900',
-    tags: ['Fashion', 'Event']
+    "pdfUrl": "/vi/cases/wow_da_phone.pdf"
   },
   {
-    id: '4',
-    client: 'GreenEnergy Co.',
-    title: 'Sustainable Future',
-    description: 'Awareness Kampagne für nachhaltige Energielösungen mit Fokus auf Storytelling und Education.',
-    stats: [
-      { label: 'Views', value: '3M' },
-      { label: 'Avg Watch Time', value: '45s' },
-      { label: 'Positive Sentiment', value: '98%' }
+    "id": "4",
+    "client": "Wow",
+    "title": "Wow Case Study",
+    "description": "Detaillierte Case Study als PDF verfügbar.",
+    "stats": [],
+    "imageUrl": "https://placehold.co/1600x900/18181b/ffffff?text=Wow%20Case%20Study",
+    "tags": [
+      "PDF Case"
     ],
-    imageUrl: 'https://picsum.photos/seed/case3/1600/900',
-    tags: ['Tech', 'Education']
-  },
-  {
-    id: '5',
-    client: 'HOMAG',
-    title: 'Benberger x HOMAG',
-    description: 'Detaillierte Case Study als PDF verfügbar.',
-    stats: [],
-    imageUrl: 'https://placehold.co/1600x900?text=Benberger%20x%20HOMAG',
-    tags: ['PDF Case'],
-    pdfUrl: '/vi/cases/benberger_homag.pdf'
-  },
-  {
-    id: '6',
-    client: 'PDR',
-    title: 'PDR x Vertical Influence',
-    description: 'Detaillierte Case Study als PDF verfügbar.',
-    stats: [],
-    imageUrl: 'https://placehold.co/1600x900?text=PDR%20x%20Vertical%20Influence',
-    tags: ['PDF Case'],
-    pdfUrl: '/vi/cases/pdr_vertical_influence.pdf'
-  },
-  {
-    id: '7',
-    client: 'Juizy Wow',
-    title: 'Wow Da Phone',
-    description: 'Detaillierte Case Study als PDF verfügbar.',
-    stats: [],
-    imageUrl: 'https://placehold.co/1600x900?text=Wow%20Da%20Phone',
-    tags: ['PDF Case'],
-    pdfUrl: '/vi/cases/wow_da_phone.pdf'
+    "pdfUrl": "/vi/cases/6597.pdf"
   }
+
 ];
