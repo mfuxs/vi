@@ -22,7 +22,8 @@ const ScrollToTop = () => {
 };
 
 const App: React.FC = () => {
-  const basename = process.env.GITHUB_ACTIONS === 'true' ? '/vi' : '';
+  // Entnimmt den Basename automatisch aus der Vite Config (base)
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   return (
     <Router basename={basename}>
