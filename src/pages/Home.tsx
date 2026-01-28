@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { influencers, caseStudies } from '../data'; // Added 'influencers' import
 import { ArrowRight, TrendingUp, Users, Award, Mail } from 'lucide-react';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
@@ -9,7 +10,7 @@ import { motion } from 'framer-motion';
 const Home: React.FC = () => {
   const { t } = useLanguage();
   const featuredInfluencers = influencers.slice(0, 3);
-  // const featuredCases = caseStudies.slice(0, 2);
+  const featuredCases = caseStudies.slice(0, 2);
 
   const containerVariants = {
     hidden: { opacity: 0 },
