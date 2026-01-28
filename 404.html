@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vertical Influence</title>
+    <script type="text/javascript">
+      // Robust SPA Redirect Logic
+      var l = window.location;
+      
+      // Diese Funktion berechnet automatisch, wie viele Pfad-Segmente beibehalten werden müssen.
+      // Auf mfuxs.github.io/vi/ erkennt sie '/vi/' und setzt segments=1.
+      // Auf einer Custom Domain erkennt sie '/', und setzt segments=0.
+      var pathSegmentsToKeep = l.pathname.indexOf('/vi/') !== -1 ? 1 : 0;
+
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
