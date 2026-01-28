@@ -1,6 +1,9 @@
 identifier,de,en
 nav_home,Home,Home
 nav_portfolio,Talents,Talents
+nav_handwerk,Handwerk,Craft
+nav_technik,Technik,Tech
+nav_about,Über uns,About Us
 nav_cases,Success Stories,Success Stories
 nav_contact,Kontakt,Contact
 nav_get_in_touch,Kontakt aufnehmen,Get in Touch
@@ -22,6 +25,23 @@ section_recent_work_title,Aktuelle Projekte,Recent Work
 section_recent_work_subtitle,Echte Ergebnisse durch authentisches Storytelling.,Real results driven by authentic storytelling.
 section_cta_reach_title,Bereit, deine Reichweite zu vergrößern?,Ready to amplify your reach?
 section_cta_reach_text,Lass uns besprechen, wie wir deine Marke mit den richtigen Stimmen stärken können.,Let's discuss how we can elevate your brand with the right voices.
+unit_handwerk_name,Handwerksunit,Craftsmanship Unit
+unit_handwerk_claim,Tradition trifft auf digitale Reichweite.,Tradition meets digital reach.
+unit_handwerk_desc,"Unsere Handwerksunit vereint echte Experten und Meister ihres Fachs. Wir bringen authentisches Handwerk in die digitale Welt und schaffen Verbindungen, die Bestand haben.","Our craftsmanship unit brings together real experts and masters of their trade. We bring authentic craftsmanship to the digital world and create connections that last."
+unit_technik_name,Technik-Unit,Tech Unit
+unit_technik_claim,Die Zukunft im digitalen Fokus.,Focusing on the digital future.
+unit_technik_desc,"Von Hardware-Experten bis zu Software-Pionieren: Unsere Technik-Unit repräsentiert die Speerspitze der digitalen Innovation und macht komplexe Themen für Millionen greifbar.","From hardware experts to software pioneers: our tech unit represents the spearhead of digital innovation and makes complex topics tangible for millions."
+about_hero_title,Wir sind Vertical Influence.,We are Vertical Influence.
+about_hero_text,"Eine Agentur, geboren aus der Leidenschaft für authentisches Storytelling und digitale Kultur. Wir verbinden Marken mit Menschen, nicht nur mit Followern.","An agency born from a passion for authentic storytelling and digital culture. We connect brands with people, not just followers."
+about_values_title,Unsere Werte,Our Values
+about_value_1_title,Authentizität,Authenticity
+about_value_1_text,Wir glauben an echte Geschichten und unverfälschte Stimmen.,We believe in real stories and genuine voices.
+about_value_2_title,Qualität,Quality
+about_value_2_text,Klasse statt Masse. Wir kuratieren unser Netzwerk handverlesen.,Quality over quantity. We curate our network by hand.
+about_value_3_title,Innovation,Innovation
+about_value_3_text,Wir denken Formate neu und gehen dahin, wo die Aufmerksamkeit ist.,We rethink formats and go where the attention is.
+about_team_title,Das Team,The Team
+about_team_text,Ein Kollektiv aus Strategen, Kreativen und Machern.,A collective of strategists, creatives and doers.
 portfolio_title,Unsere Talente,Our Talent
 portfolio_subtitle,"Kuratiert, authentisch und reichweitenstark. Entdecken Sie unsere exklusive Auswahl an Content Creatorn.","Curated, authentic and high-reach. Discover our exclusive selection of content creators."
 portfolio_filter_all,Alle,All
@@ -78,24 +98,4 @@ seo_influencer_desc_suffix,bei Vertical Influence.,at Vertical Influence.
 404_text,Die gesuchte Seite existiert leider nicht.,The page you are looking for does not exist.
 404_back_home,Zurück zur Startseite,Back Home
 legal_impressum,Impressum,Impressum
-nav_about,Über uns,About Us
-about_hero_title,Wir sind Vertical Influence.,We are Vertical Influence.
-about_hero_text,"Eine Agentur, geboren aus der Leidenschaft für authentisches Storytelling und digitale Kultur. Wir verbinden Marken mit Menschen, nicht nur mit Followern.","An agency born from a passion for authentic storytelling and digital culture. We connect brands with people, not just followers."
-about_values_title,Unsere Werte,Our Values
-about_value_1_title,Authentizität,Authenticity
-about_value_1_text,Wir glauben an echte Geschichten und unverfälschte Stimmen.,We believe in real stories and genuine voices.
-about_value_2_title,Qualität,Quality
-about_value_2_text,Klasse statt Masse. Wir kuratieren unser Netzwerk handverlesen.,Quality over quantity. We curate our network by hand.
-about_value_3_title,Innovation,Innovation
-about_value_3_text,Wir denken Formate neu und gehen dahin, wo die Aufmerksamkeit ist.,We rethink formats and go where the attention is.
-about_team_title,Das Team,The Team
-about_team_text,Ein Kollektiv aus Strategen, Kreativen und Machern.,A collective of strategists, creatives and doers.
 legal_datenschutz,Datenschutz,Privacy Policy
-unit_handwerk_name,Handwerksunit,Craftsmanship Unit
-unit_handwerk_claim,Tradition trifft auf digitale Reichweite.,Tradition meets digital reach.
-unit_handwerk_desc,"Unsere Handwerksunit vereint echte Experten und Meister ihres Fachs. Wir bringen authentisches Handwerk in die digitale Welt und schaffen Verbindungen, die Bestand haben.","Our craftsmanship unit brings together real experts and masters of their trade. We bring authentic craftsmanship to the digital world and create connections that last."
-unit_technik_name,Technik-Unit,Tech Unit
-unit_technik_claim,Die Zukunft im digitalen Fokus.,Focusing on the digital future.
-unit_technik_desc,"Von Hardware-Experten bis zu Software-Pionieren: Unsere Technik-Unit repräsentiert die Speerspitze der digitalen Innovation und macht komplexe Themen für Millionen greifbar.","From hardware experts to software pioneers: our tech unit represents the spearhead of digital innovation and makes complex topics tangible for millions."
-nav_handwerk,Handwerk,Craft
-nav_technik,Technik,Tech
