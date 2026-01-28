@@ -2,6 +2,7 @@ import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
+import sharp from 'sharp';
 
 // --- KONFIGURATION ---
 const SERVICE_ACCOUNT_KEY = process.env.GOOGLE_SERVICE_ACCOUNT_KEY; // JSON String aus GitHub Secrets
@@ -76,11 +77,22 @@ async function run() {
       const localFileName = `${cleanHandle}.${ext}`;
       const localPath = path.join(ASSETS_DIR, localFileName);
       
+      const tempPath = localPath + '.tmp';
       console.log(`Syncing image for ${creator.name} (${driveFile.name})...`);
-      await downloadFile(drive, driveFile.id, localPath);
+      await downloadFile(drive, driveFile.id, tempPath);
       
-      // Update creator imageUrl in JSON (relativer Pfad für das Frontend)
-      creator.imageUrl = `images/creators/${localFileName}`;
+      const webpFileName = `${cleanHandle}.webp`;
+      const finalPath = path.join(ASSETS_DIR, webpFileName);
+      
+      await sharp(tempPath)
+        .resize(1200, 1500, { fit: 'cover', position: 'top' })
+        .webp({ quality: 80 })
+        .toFile(finalPath);
+      
+      fs.unlinkSync(tempPath);
+      
+      // Update creator imageUrl in JSON
+      creator.imageUrl = `images/creators/${webpFileName}`;
       updatedCount++;
     } else {
       console.log(`No image found in Drive for handle: ${creator.handle}`);

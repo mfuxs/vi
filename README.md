@@ -1,55 +1,38 @@
-# Vertical Influence by insocial
+# Vertical Influence - Web Plattform
 
-Dies ist das Repository für die Webseite der Agentur **Vertical Influence**.  
-Die Anwendung dient als Portfolio, um Influencer, Creator und erfolgreiche Case Studies der Agentur zu präsentieren.
+Eine moderne, hochperformante Influencer-Management-Plattform, die als "Headless CMS" konzipiert ist. Die Pflege der Inhalte erfolgt vollständig über Google Sheets und Google Drive, während die Webseite als statische, extrem sichere Single Page Application (SPA) operiert.
 
-## Überblick
+## 🚀 Key Features
 
-Das Projekt ist eine moderne Single-Page-Application (SPA), die Besuchern ermöglicht:
-- Einen Überblick über exklusive Influencer und Creator zu erhalten.
-- Detaillierte Statistiken und Informationen zu jedem Creator einzusehen (Follower-Zahlen, Plattformen, Bio).
-- Erfolgreiche Kampagnen und Case Studies zu durchstöbern.
-- Kontakt mit der Agentur aufzunehmen.
+### 🛠 Low-Tech CMS Integration
+- **Content Management**: Pflege aller Creator, Cases und Texte direkt über Google Sheets (CSV-Sync).
+- **Asset Management**: Bilder werden automatisch aus einem Google Drive Ordner synchronisiert und mit den Creatorn gemappt.
+- **Workflow**: Automatisierte GitHub Actions synchronisieren Daten & Assets zweimal täglich oder auf Knopfdruck.
 
-## Technologien
+### 🌍 Global Translation System
+- **Mehrsprachigkeit**: Volle Unterstützung für Deutsch und Englisch.
+- **Dynamic Content**: Jedes Wort der Webseite kann ohne Code-Änderung über das Google Sheet angepasst werden.
+- **Persistent**: Die Sprachwahl wird im Browser des Nutzers gespeichert.
 
-Das Projekt basiert auf folgenden Technologien:
+### ⚡ Performance & SEO
+- **Image Optimization**: Automatische Konvertierung aller Bilder in das **WebP-Format** und Größenoptimierung während des Builds.
+- **Portfolio Search**: Integrierte Echtzeit-Suche nach Creatorn, Nischen oder Handles.
+- **JSON-LD Schema**: Strukturierte Daten (Person/Organization) für optimale Sichtbarkeit in den Google Suchergebnissen (Rich Snippets).
+- **Vite 6 & React 19**: Nutzung modernster Framework-Versionen für minimale Ladezeiten.
 
-- **Framework:** [React 19](https://react.dev/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **Sprache:** [TypeScript](https://www.typescriptlang.org/)
-- **Routing:** [React Router Dom](https://reactrouter.com/)
-- **Styling:** CSS (Modular/Global) & [Lucide React](https://lucide.dev/) für Icons
+### 🛡 IT-Security Hardening
+- **XSS Protection**: Automatisches HTML-Escaping aller Daten beim Synchronisieren.
+- **Content Security Policy (CSP)**: Strikte Sicherheitsregeln für externe Scripte und Ressourcen.
+- **No Client-Side Secrets**: API-Keys wurden aus dem Client-Bundle entfernt.
+- **Static Hosting**: 100% robust gegen Server-Side Attacks durch Hosting auf GitHub Pages.
 
-## Projektstruktur
+## 📖 Bedienung für die Redaktion
 
-- `/src/pages`: Enthält die Hauptseiten (Home, Portfolio, Cases, etc.).
-- `/src/components`: Wiederverwendbare UI-Komponenten.
-- `/src/data.ts`: **WICHTIG!** Hier werden alle Daten für Influencer und Case Studies verwaltet. Änderungen an dieser Datei aktualisieren automatisch den Inhalt der Webseite.
-- `/src/types.ts`: TypeScript Interfaces für die Datenstrukturen.
+### 1. Creator & Texte pflegen
+Änderungen in den verknüpften Google Sheets vornehmen und die GitHub Action **"Sync Data and Deploy"** starten.
 
-## Installation & Start
+### 2. Bilder aktualisieren
+Bilder einfach in den Google Drive Ordner hochladen. Dateiname muss dem Handle (z.B. `affeaufbike.jpg`) oder dem Eintrag in der Spalte `image_name` entsprechen.
 
-Um das Projekt lokal auszuführen:
-
-1. **Repository klonen:**
-   ```bash
-   git clone <repo-url>
-   cd vi
-   ```
-
-2. **Abhängigkeiten installieren:**
-   ```bash
-   npm install
-   ```
-
-3. **Entwicklungsserver starten:**
-   ```bash
-   npm run dev
-   ```
-   Die App ist nun unter `http://localhost:5173` erreichbar.
-
-4. **Build für Produktion:**
-   ```bash
-   npm run build
-   ```
+---
+*Entwickelt von Gemini CLI Agent für Vertical Influence.*

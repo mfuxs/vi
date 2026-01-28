@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { influencers } from '../data';
 import { Link } from 'react-router-dom';
-import { Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Instagram, Youtube, Linkedin, Search } from 'lucide-react';
 import { Influencer } from '../types';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
@@ -9,16 +9,20 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Portfolio: React.FC = () => {
   const { t } = useLanguage();
-  // Use 'All' or specific categories defined in data
   const [activeCategory, setActiveCategory] = useState<string>('All');
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Derive categories dynamically
   const uniqueCategories = Array.from(new Set(influencers.map(i => i.category)));
   const categories = ['All', ...uniqueCategories];
 
-  const filteredInfluencers = activeCategory === 'All'
-    ? influencers
-    : influencers.filter(i => i.category === activeCategory);
+  const filteredInfluencers = influencers.filter(i => {
+    const matchesCategory = activeCategory === 'All' || i.category === activeCategory;
+    const matchesSearch = i.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                         i.handle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         i.niche.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -32,6 +36,20 @@ const Portfolio: React.FC = () => {
           <p className="text-zinc-500 max-w-2xl mx-auto mb-10">
             {t('portfolio_subtitle')}
           </p>
+
+          {/* Search Bar */}
+          <div className="max-w-md mx-auto mb-12 relative">
+            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-zinc-400">
+              <Search size={20} />
+            </div>
+            <input
+              type="text"
+              placeholder={language === 'en' ? 'Search creators...' : 'Creator suchen...'}
+              className="w-full pl-12 pr-4 py-4 bg-zinc-50 border border-zinc-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-black transition-all"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
 
           {/* Filter Chips */}
           <div className="flex flex-wrap justify-center gap-3">

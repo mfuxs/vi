@@ -8,6 +8,7 @@ interface SEOProps {
     image?: string;
     url?: string;
     robots?: string;
+    schema?: any;
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -15,7 +16,8 @@ const SEO: React.FC<SEOProps> = ({
     description = "Premium Influencer Management für Marken, die den Unterschied machen wollen. Data-driven. Authentic. Vertical.",
     image = "images/share-image.jpg",
     url = window.location.href,
-    robots = "index, follow"
+    robots = "index, follow",
+    schema
 }) => {
     const siteTitle = "Vertical Influence";
     const fullTitle = `${title} | ${siteTitle}`;
@@ -41,6 +43,13 @@ const SEO: React.FC<SEOProps> = ({
             <meta property="twitter:title" content={fullTitle} />
             <meta property="twitter:description" content={description} />
             <meta property="twitter:image" content={fullImage} />
+
+            {/* Structured Data */}
+            {schema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            )}
         </Helmet>
     );
 };

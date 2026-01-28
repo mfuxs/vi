@@ -46,12 +46,27 @@ const InfluencerDetail: React.FC = () => {
     }
   };
 
+  const influencerSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": influencer.name,
+    "alternateName": influencer.handle,
+    "description": influencer.bio,
+    "image": window.location.origin + getAssetPath(influencer.imageUrl),
+    "jobTitle": influencer.niche,
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vertical Influence"
+    }
+  };
+
   return (
     <div className="w-full min-h-screen bg-white">
       <SEO
         title={`${influencer.name} (${influencer.niche})`}
         description={influencer.bio || `${influencer.name}, Content Creator in ${influencer.niche}.`}
         image={influencer.imageUrl}
+        schema={influencerSchema}
       />
       
       {/* Back Link */}
