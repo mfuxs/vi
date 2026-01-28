@@ -3,19 +3,21 @@ import { caseStudies } from '../data';
 import { ArrowUpRight } from 'lucide-react';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
+import { useLanguage } from '../context/LanguageContext';
 
 const Cases: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="w-full min-h-screen bg-white">
       <SEO
-        title="Case Studies"
-        description="Ausgewählte Kampagnen und Erfolgsgeschichten. Sehen Sie, wie wir Markenbotschaften in kulturelle Momente verwandeln."
+        title={t('seo_cases_title')}
+        description={t('seo_cases_desc')}
       />
       <div className="max-w-7xl mx-auto px-6 py-24">
         <div className="mb-20">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Selected Work</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">{t('cases_title')}</h1>
           <p className="text-xl text-zinc-500 max-w-2xl">
-            Ergebnisse, die für sich sprechen. Hier zeigen wir, wie wir Markenbotschaften in kulturelle Momente verwandeln.
+            {t('cases_subtitle')}
           </p>
         </div>
 
@@ -66,12 +68,12 @@ const Cases: React.FC = () => {
 
                 {item.pdfUrl ? (
                   <a href={getAssetPath(item.pdfUrl)} target="_blank" rel="noopener noreferrer" className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
-                    Download Case Study (PDF)
+                    {t('cases_download_pdf')}
                     <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
                   </a>
                 ) : (
                   <button className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
-                    View Full Case
+                    {t('cases_view_full')}
                     <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
                   </button>
                 )}
@@ -84,5 +86,7 @@ const Cases: React.FC = () => {
     </div>
   );
 };
+
+export default Cases;
 
 export default Cases;
