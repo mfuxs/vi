@@ -1,32 +1,11 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Cases from './pages/Cases';
-import Contact from './pages/Contact';
-import InfluencerDetail from './pages/InfluencerDetail';
-import NotFound from './pages/NotFound';
-import Impressum from './pages/Impressum';
-import Datenschutz from './pages/Datenschutz';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
-// Scroll to top helper
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
+// ... ScrollToTop component ...
 
 const App: React.FC = () => {
-  // Entnimmt den Basename automatisch aus der Vite Config (base)
-  const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
-
   return (
-    <Router basename={basename}>
+    <Router>
       <ScrollToTop />
       <Layout>
         <Routes>
