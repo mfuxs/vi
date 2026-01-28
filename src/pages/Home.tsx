@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, TrendingUp, Users, Award, Mail } from 'lucide-react';
 import { influencers, caseStudies } from '../data';
 import SEO from '../components/SEO';
+import { getAssetPath } from '../utils/paths';
 
 const Home: React.FC = () => {
   const featuredInfluencers = influencers.slice(0, 3);
@@ -102,7 +103,7 @@ const Home: React.FC = () => {
             {featuredInfluencers.map(influencer => (
               <Link to={`/portfolio/${influencer.id}`} key={influencer.id} className="group block">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-zinc-100 mb-4 shadow-sm">
-                  <img src={influencer.imageUrl} alt={influencer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={getAssetPath(influencer.imageUrl)} alt={influencer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <h3 className="text-lg font-bold group-hover:text-zinc-600 transition-colors">{influencer.name}</h3>
                 <p className="text-sm text-zinc-500">{influencer.niche}</p>
@@ -135,7 +136,7 @@ const Home: React.FC = () => {
             {featuredCases.map(study => (
               <Link to="/cases" key={study.id} className="group block">
                 <div className="relative aspect-video overflow-hidden rounded-xl bg-zinc-200 mb-6 shadow-md">
-                  <img src={study.imageUrl} alt={study.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={getAssetPath(study.imageUrl)} alt={study.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="flex items-center space-x-2 mb-2">
                   <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">{study.client}</span>

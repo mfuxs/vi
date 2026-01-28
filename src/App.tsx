@@ -22,8 +22,10 @@ const ScrollToTop = () => {
 };
 
 const App: React.FC = () => {
+  const basename = process.env.GITHUB_ACTIONS === 'true' ? '/vi' : '';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <Layout>
         <Routes>

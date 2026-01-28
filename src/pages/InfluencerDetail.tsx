@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { influencers } from '../data';
 import { ArrowLeft, Instagram, Youtube, Linkedin, Mail, Users, BarChart3, ExternalLink } from 'lucide-react';
 import SEO from '../components/SEO';
+import { getAssetPath } from '../utils/paths';
 
 const InfluencerDetail: React.FC = () => {
   const { id } = useParams();
@@ -62,7 +63,7 @@ const InfluencerDetail: React.FC = () => {
           {/* Image Section - Sticky only on Desktop (lg) */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-100 shadow-sm lg:sticky lg:top-24 self-start">
             <img
-              src={influencer.imageUrl}
+              src={getAssetPath(influencer.imageUrl)}
               alt={influencer.name}
               className="w-full h-full object-cover"
             />

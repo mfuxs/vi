@@ -2,6 +2,7 @@ import React from 'react';
 import { caseStudies } from '../data';
 import { ArrowUpRight } from 'lucide-react';
 import SEO from '../components/SEO';
+import { getAssetPath } from '../utils/paths';
 
 const Cases: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ const Cases: React.FC = () => {
               <div className="w-full md:w-3/5">
                 <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                   <img
-                    src={item.imageUrl}
+                    src={getAssetPath(item.imageUrl)}
                     alt={item.title}
                     className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -64,7 +65,7 @@ const Cases: React.FC = () => {
                 </div>
 
                 {item.pdfUrl ? (
-                  <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
+                  <a href={getAssetPath(item.pdfUrl)} target="_blank" rel="noopener noreferrer" className="flex items-center text-black font-semibold hover:underline decoration-2 underline-offset-4 group">
                     Download Case Study (PDF)
                     <ArrowUpRight className="ml-1 w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
                   </a>

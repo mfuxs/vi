@@ -8,8 +8,12 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    // GitHub Pages uses /vi/, Custom Domains use /
+    const isGithubPages = process.env.GITHUB_ACTIONS === 'true';
+    const base = isGithubPages ? '/vi/' : '/';
+
     return {
-      base: '/vi/',
+      base: base,
       server: {
         port: 3000,
         host: '0.0.0.0',

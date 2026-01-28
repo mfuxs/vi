@@ -34,7 +34,7 @@ async function syncCreators() {
     niche: row.niche,
     category: row.category,
     followers: row.followers,
-    imageUrl: row.imageUrl,
+    imageUrl: row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, ''),
     bio: row.bio,
     platforms: row.platforms.split(',').map((p: string) => p.trim()),
     platformStats: {
@@ -90,7 +90,7 @@ async function syncCases() {
       title: row.title,
       description: row.description,
       stats: stats,
-      imageUrl: row.imageUrl,
+      imageUrl: row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, ''),
       tags: row.tags.split(',').map((t: string) => t.trim()),
       pdfUrl: row.pdfUrl || undefined
     };

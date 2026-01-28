@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, Youtube, Linkedin } from 'lucide-react';
 import { Influencer } from '../types';
 import SEO from '../components/SEO';
+import { getAssetPath } from '../utils/paths';
 
 const Portfolio: React.FC = () => {
   // Use 'All' or specific categories defined in data
@@ -72,7 +73,7 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
     >
       <div className="aspect-[4/5] overflow-hidden bg-zinc-100 relative">
         <img
-          src={data.imageUrl}
+          src={getAssetPath(data.imageUrl)}
           alt={data.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
