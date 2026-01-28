@@ -19,7 +19,38 @@
       "youtube": "234K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "35%",
+        "female": "65%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "85%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "10%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -42,7 +73,38 @@
       "youtube": "8.4K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "70%",
+        "female": "30%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "25%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -65,7 +127,38 @@
       "youtube": "23.8K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "80%",
+        "female": "20%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "40%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "25%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -88,7 +181,38 @@
       "youtube": "58.7K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "85%",
+        "female": "15%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "30%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "6%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -111,7 +235,38 @@
       "youtube": "510K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "60%",
+        "female": "40%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "40%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "80%"
+        },
+        {
+          "country": "USA",
+          "percentage": "10%"
+        },
+        {
+          "country": "UK",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -130,7 +285,38 @@
       "instagram": "15K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "55%",
+        "female": "45%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "50%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "25%"
+        },
+        {
+          "range": "45+",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "98%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "1%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
+        }
+      ]
     }
   },
   {
@@ -149,7 +335,38 @@
       "instagram": "213K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "10%",
+        "female": "90%"
+      },
+      "age": [
+        {
+          "range": "35-44",
+          "percentage": "40%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "45+",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "92%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -170,7 +387,38 @@
       "instagram": "69.4K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "40%",
+        "female": "60%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "30%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "96%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -191,7 +439,38 @@
       "instagram": "32.4K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "75%",
+        "female": "25%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "30%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "97%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
+        }
+      ]
     }
   },
   {
@@ -214,7 +493,38 @@
       "youtube": "134K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "82%",
+        "female": "18%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "40%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "30%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "94%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -233,7 +543,38 @@
       "instagram": "116K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "45%",
+        "female": "55%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "25%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -256,7 +597,38 @@
       "youtube": "443K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "65%",
+        "female": "35%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "55%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "20%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "92%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -277,7 +649,38 @@
       "instagram": "26.2K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "30%",
+        "female": "70%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "40%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "94%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -298,7 +701,38 @@
       "youtube": "16.9K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "78%",
+        "female": "22%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "50%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "20%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "96%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -317,7 +751,38 @@
       "instagram": "59.5K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "85%",
+        "female": "15%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "35%"
+        },
+        {
+          "range": "45+",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "98%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "1%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
+        }
+      ]
     }
   },
   {
@@ -340,7 +805,38 @@
       "youtube": "481K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "55%",
+        "female": "45%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "45%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "35%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "85%"
+        },
+        {
+          "country": "Turkey",
+          "percentage": "10%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -363,7 +859,38 @@
       "youtube": "100K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "40%",
+        "female": "60%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "30%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -382,7 +909,38 @@
       "instagram": "351K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "5%",
+        "female": "95%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "55%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "30%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "94%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -405,7 +963,38 @@
       "youtube": "63.1K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "65%",
+        "female": "35%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "50%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "82%"
+        },
+        {
+          "country": "USA",
+          "percentage": "10%"
+        },
+        {
+          "country": "UK",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -428,7 +1017,38 @@
       "youtube": "36.3K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "50%",
+        "female": "50%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "25%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "6%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "6%"
+        }
+      ]
     }
   },
   {
@@ -451,7 +1071,38 @@
       "youtube": "306K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "80%",
+        "female": "20%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "35%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "85%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "7%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -472,7 +1123,38 @@
       "instagram": "113K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "60%",
+        "female": "40%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "25%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "97%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
+        }
+      ]
     }
   },
   {
@@ -495,7 +1177,38 @@
       "youtube": "177K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "55%",
+        "female": "45%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "60%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "5%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "94%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -518,7 +1231,38 @@
       "youtube": "22.5K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "82%",
+        "female": "18%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "55%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "6%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -541,7 +1285,38 @@
       "youtube": "21.8K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "15%",
+        "female": "85%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "40%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "92%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -564,7 +1339,38 @@
       "youtube": "3.9M"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "48%",
+        "female": "52%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -587,7 +1393,38 @@
       "youtube": "468K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "52%",
+        "female": "48%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "50%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "35%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "6%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -610,12 +1447,43 @@
       "youtube": "395K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "12%",
+        "female": "88%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "25%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "20%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "92%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
     "id": "29",
-    "name": "MariusFuxs",
+    "name": "Mariusfuxs",
     "handle": "@mariusfuxs",
     "niche": "Tech",
     "category": "Tech",
@@ -633,7 +1501,38 @@
       "youtube": "16K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "85%",
+        "female": "15%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -654,7 +1553,38 @@
       "instagram": "76K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "50%",
+        "female": "50%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "40%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "35%"
+        },
+        {
+          "range": "45+",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -677,7 +1607,38 @@
       "youtube": "91.5K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "88%",
+        "female": "12%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "96%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -696,7 +1657,38 @@
       "instagram": "12.5K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "5%",
+        "female": "95%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "60%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "25%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "98%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "1%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
+        }
+      ]
     }
   },
   {
@@ -719,7 +1711,38 @@
       "youtube": "14.7K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "82%",
+        "female": "18%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -742,7 +1765,38 @@
       "youtube": "1.4M"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "58%",
+        "female": "42%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "35%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -765,7 +1819,38 @@
       "youtube": "113K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "88%",
+        "female": "12%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "55%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "30%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "7%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -788,7 +1873,38 @@
       "youtube": "585K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "55%",
+        "female": "45%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "60%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "25%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "92%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "4%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "4%"
+        }
+      ]
     }
   },
   {
@@ -809,7 +1925,38 @@
       "instagram": "87K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "48%",
+        "female": "52%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "30%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "94%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "3%"
+        }
+      ]
     }
   },
   {
@@ -830,7 +1977,38 @@
       "instagram": "39.4K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "15%",
+        "female": "85%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "55%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "25%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
     }
   },
   {
@@ -853,7 +2031,38 @@
       "youtube": "280K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "62%",
+        "female": "38%"
+      },
+      "age": [
+        {
+          "range": "13-17",
+          "percentage": "50%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "35%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "10%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "90%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "5%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -876,7 +2085,38 @@
       "youtube": "163K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {
+        "male": "85%",
+        "female": "15%"
+      },
+      "age": [
+        {
+          "range": "18-24",
+          "percentage": "45%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "30%"
+        },
+        {
+          "range": "13-17",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "88%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "7%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "5%"
+        }
+      ]
     }
   },
   {
@@ -889,13 +2129,26 @@
     "imageUrl": "https://ui-avatars.com/api/?name=Mike%20Imos&background=random",
     "bio": "",
     "platforms": [
-      "TikTok"
+      ""
     ],
     "platformStats": {
-      "tiktok": "163K"
+      "tiktok": "TikTok",
+      "instagram": "163K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {},
+      "age": [
+        {
+          "range": "75%",
+          "percentage": "0%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "25%",
+          "percentage": "0%"
+        }
+      ]
     }
   },
   {
@@ -908,13 +2161,26 @@
     "imageUrl": "https://ui-avatars.com/api/?name=Dachdeckerin%20Fabienne&background=random",
     "bio": "",
     "platforms": [
-      "TikTok"
+      ""
     ],
     "platformStats": {
-      "tiktok": "33K"
+      "tiktok": "TikTok",
+      "instagram": "33K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {},
+      "age": [
+        {
+          "range": "35%",
+          "percentage": "0%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "65%",
+          "percentage": "0%"
+        }
+      ]
     }
   },
   {
@@ -927,13 +2193,26 @@
     "imageUrl": "https://ui-avatars.com/api/?name=Rene%20Lang&background=random",
     "bio": "",
     "platforms": [
-      "TikTok"
+      ""
     ],
     "platformStats": {
-      "tiktok": "146K"
+      "tiktok": "TikTok",
+      "instagram": "146K"
     },
     "demographics": {
-      "gender": {}
+      "gender": {},
+      "age": [
+        {
+          "range": "82%",
+          "percentage": "0%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "18%",
+          "percentage": "0%"
+        }
+      ]
     }
   }
 ]
