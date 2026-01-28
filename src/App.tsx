@@ -1,7 +1,25 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Cases from './pages/Cases';
+import Contact from './pages/Contact';
+import InfluencerDetail from './pages/InfluencerDetail';
+import NotFound from './pages/NotFound';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 
-// ... ScrollToTop component ...
+// Scroll to top helper
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const App: React.FC = () => {
   return (
