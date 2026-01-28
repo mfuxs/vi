@@ -124,5 +124,3 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
 };
 
 export default Portfolio;
-
-export default Portfolio;
