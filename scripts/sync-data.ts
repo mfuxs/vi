@@ -55,6 +55,20 @@ async function syncCreators() {
       tiktokHandle: sanitize(row.tiktok_handle) || undefined,
       instagramHandle: sanitize(row.instagram_handle) || undefined,
       youtubeHandle: sanitize(row.youtube_handle) || undefined,
+    },
+    demographics: {
+      gender: {
+        male: sanitize(row.gender_male) || undefined,
+        female: sanitize(row.gender_female) || undefined,
+      },
+      age: row.age_data ? row.age_data.split(',').map((s: string) => {
+        const [range, perc] = s.split(':').map(v => v.trim());
+        return { range, percentage: perc };
+      }) : undefined,
+      topCountries: row.country_data ? row.country_data.split(',').map((s: string) => {
+        const [country, perc] = s.split(':').map(v => v.trim());
+        return { country, percentage: perc };
+      }) : undefined,
     }
   }));
 

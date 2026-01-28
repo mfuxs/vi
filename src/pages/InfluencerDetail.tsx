@@ -140,6 +140,77 @@ const InfluencerDetail: React.FC = () => {
               </p>
             </div>
 
+            {/* Demographics */}
+            {influencer.demographics && (
+              <div className="mb-10">
+                <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">Demographics</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-zinc-50 p-6 rounded-2xl border border-zinc-100">
+                  
+                  {/* Gender & Age */}
+                  <div className="space-y-6">
+                    {influencer.demographics.gender && (
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Gender Distribution</p>
+                        <div className="space-y-2">
+                          {influencer.demographics.gender.female && (
+                            <div className="w-full">
+                              <div className="flex justify-between text-xs mb-1"><span>Female</span><span>{influencer.demographics.gender.female}</span></div>
+                              <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
+                                <div className="h-full bg-zinc-900 rounded-full" style={{ width: influencer.demographics.gender.female }}></div>
+                              </div>
+                            </div>
+                          )}
+                          {influencer.demographics.gender.male && (
+                            <div className="w-full">
+                              <div className="flex justify-between text-xs mb-1"><span>Male</span><span>{influencer.demographics.gender.male}</span></div>
+                              <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
+                                <div className="h-full bg-zinc-400 rounded-full" style={{ width: influencer.demographics.gender.male }}></div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    {influencer.demographics.age && (
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Age Groups</p>
+                        <div className="grid grid-cols-2 gap-3">
+                          {influencer.demographics.age.map(a => (
+                            <div key={a.range} className="bg-white p-3 rounded-lg border border-zinc-100 shadow-sm">
+                              <p className="text-[10px] text-zinc-400 uppercase font-bold">{a.range}</p>
+                              <p className="text-lg font-bold">{a.percentage}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Top Countries */}
+                  {influencer.demographics.topCountries && (
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Top Countries</p>
+                      <div className="space-y-3">
+                        {influencer.demographics.topCountries.map(c => (
+                          <div key={c.country} className="flex items-center justify-between group">
+                            <span className="text-sm font-medium">{c.country}</span>
+                            <div className="flex items-center flex-grow mx-4">
+                               <div className="h-1 w-full bg-zinc-100 rounded-full overflow-hidden">
+                                 <div className="h-full bg-zinc-300 group-hover:bg-zinc-900 transition-colors" style={{ width: c.percentage }}></div>
+                               </div>
+                            </div>
+                            <span className="text-sm font-bold">{c.percentage}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                </div>
+              </div>
+            )}
+
             {/* Social Platforms */}
             <div className="mb-12">
               <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">Social Profiles</h3>

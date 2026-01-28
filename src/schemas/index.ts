@@ -21,6 +21,20 @@ export const InfluencerSchema = z.object({
   bio: z.string(),
   platforms: z.array(z.string()),
   platformStats: PlatformStatsSchema.optional(),
+  demographics: z.object({
+    gender: z.object({
+      male: z.string().optional(),
+      female: z.string().optional(),
+    }).optional(),
+    age: z.array(z.object({
+      range: z.string(),
+      percentage: z.string(),
+    })).optional(),
+    topCountries: z.array(z.object({
+      country: z.string(),
+      percentage: z.string(),
+    })).optional(),
+  }).optional(),
 });
 
 export const CaseStudyStatSchema = z.object({

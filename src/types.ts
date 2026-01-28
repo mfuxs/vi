@@ -17,6 +17,20 @@ export interface Influencer {
     instagramHandle?: string;
     youtubeHandle?: string;
   };
+  demographics?: {
+    gender?: {
+      male?: string;
+      female?: string;
+    };
+    age?: {
+      range: string;
+      percentage: string;
+    }[];
+    topCountries?: {
+      country: string;
+      percentage: string;
+    }[];
+  };
 }
 
 export interface CaseStudy {
