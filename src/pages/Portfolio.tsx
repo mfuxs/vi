@@ -1,3 +1,8 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { influencers } from '../data';
+import { Instagram, Youtube, Linkedin, Search } from 'lucide-react';
+import { Influencer } from '../types';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
 import { useLanguage } from '../context/LanguageContext';
