@@ -29,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/portfolio" className={isActive('/portfolio')}>{t('nav_portfolio')}</Link>
             <Link to="/handwerk" className={isActive('/handwerk')}>{t('nav_handwerk')}</Link>
             <Link to="/technik" className={isActive('/technik')}>{t('nav_technik')}</Link>
+            <Link to="/about" className={isActive('/about')}>{t('nav_about')}</Link>
             {/* <Link to="/cases" className={isActive('/cases')}>{t('nav_cases')}</Link> */}
             
             {/* Desktop Language Switcher */}
@@ -94,6 +95,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/portfolio" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_portfolio')}</Link>
             <Link to="/handwerk" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_handwerk')}</Link>
             <Link to="/technik" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_technik')}</Link>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_about')}</Link>
             {/* <Link to="/cases" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_cases')}</Link> */}
             
             {/* Mobile Language Switcher */}
@@ -171,6 +173,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-4 text-zinc-500">{t('footer_navigation')}</h3>
               <ul className="space-y-3">
                 <li><Link to="/portfolio" className="hover:text-zinc-300 transition-colors">{t('nav_portfolio')}</Link></li>
+                <li><Link to="/about" className="hover:text-zinc-300 transition-colors">{t('nav_about')}</Link></li>
                 {/* <li><Link to="/cases" className="hover:text-zinc-300 transition-colors">{t('nav_cases')}</Link></li> */}
                 <li><Link to="/contact" className="hover:text-zinc-300 transition-colors">{t('nav_contact')}</Link></li>
               </ul>
