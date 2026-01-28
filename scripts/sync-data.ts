@@ -44,7 +44,8 @@ async function syncCreators() {
     niche: sanitize(row.niche),
     category: sanitize(row.category),
     followers: sanitize(row.followers),
-    imageUrl: row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, ''),
+    imageUrl: row.imageUrl ? row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, '') : '',
+    imageName: sanitize(row.image_name) || undefined,
     bio: sanitize(row.bio),
     platforms: row.platforms.split(',').map((p: string) => sanitize(p.trim())),
     platformStats: {

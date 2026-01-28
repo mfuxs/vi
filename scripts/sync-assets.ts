@@ -68,7 +68,8 @@ async function run() {
 
   for (const creator of creators) {
     const cleanHandle = creator.handle.replace('@', '').toLowerCase();
-    const driveFile = driveMap.get(cleanHandle);
+    const lookupName = (creator.imageName || cleanHandle).toLowerCase();
+    const driveFile = driveMap.get(lookupName);
 
     if (driveFile) {
       const ext = driveFile.name.split('.').pop();

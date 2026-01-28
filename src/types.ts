@@ -6,6 +6,7 @@ export interface Influencer {
   category: string; // Filter category
   followers: string;
   imageUrl: string;
+  imageName?: string;
   bio: string;
   platforms: string[];
   platformStats?: {
