@@ -1489,6 +1489,7 @@
     "category": "Tech",
     "followers": "349.5K",
     "imageUrl": "images/creators/mariusfuxs.jpeg",
+    "canvaLink": "https://www.canva.com/design/DAG_svIExfA/ri_WrHeF4N7JmAt0E5kMvg/view?utm_content=DAG_svIExfA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h44e446c6c1",
     "bio": "Tech creator and entrepreneur who gained prominence on TikTok with over 297,000 followers. He specializes in simplifying complex tech topics, offering gadget reviews, automation tips, and digital lifestyle insights. Marius has expanded his influence through YouTube and Instagram, where he shares in-depth content and engages with his audience. ",
     "platforms": [
       "TikTok",
@@ -2136,17 +2137,36 @@
       "instagram": "163K"
     },
     "demographics": {
-      "gender": {},
+      "gender": {
+        "male": "75%",
+        "female": "25%"
+      },
       "age": [
         {
-          "range": "75%",
-          "percentage": "0%"
+          "range": "25-34",
+          "percentage": "45%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "35%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "15%"
         }
       ],
       "topCountries": [
         {
-          "country": "25%",
-          "percentage": "0%"
+          "country": "Germany",
+          "percentage": "96%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
         }
       ]
     }
@@ -2168,17 +2188,36 @@
       "instagram": "33K"
     },
     "demographics": {
-      "gender": {},
+      "gender": {
+        "male": "35%",
+        "female": "65%"
+      },
       "age": [
         {
-          "range": "35%",
-          "percentage": "0%"
+          "range": "18-24",
+          "percentage": "50%"
+        },
+        {
+          "range": "25-34",
+          "percentage": "30%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "10%"
         }
       ],
       "topCountries": [
         {
-          "country": "65%",
-          "percentage": "0%"
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
         }
       ]
     }
@@ -2200,17 +2239,36 @@
       "instagram": "146K"
     },
     "demographics": {
-      "gender": {},
+      "gender": {
+        "male": "82%",
+        "female": "18%"
+      },
       "age": [
         {
-          "range": "82%",
-          "percentage": "0%"
+          "range": "25-34",
+          "percentage": "50%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "30%"
+        },
+        {
+          "range": "18-24",
+          "percentage": "10%"
         }
       ],
       "topCountries": [
         {
-          "country": "18%",
-          "percentage": "0%"
+          "country": "Germany",
+          "percentage": "97%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "2%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "1%"
         }
       ]
     }
