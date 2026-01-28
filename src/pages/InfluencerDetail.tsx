@@ -1,21 +1,23 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { influencers } from '../data';
-import { ArrowLeft, Instagram, Youtube, Linkedin, Mail, Users, BarChart3, ExternalLink, FileText } from 'lucide-react';
+import { ArrowLeft, Instagram, Youtube, Linkedin, Mail, Users, ExternalLink, FileText } from 'lucide-react';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
+import { useLanguage } from '../context/LanguageContext';
 
 const InfluencerDetail: React.FC = () => {
   const { id } = useParams();
+  const { t } = useLanguage();
   const influencer = influencers.find(i => i.id === id);
 
   if (!influencer) {
     return (
       <div className="w-full min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Influencer not found</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('influencer_not_found')}</h2>
           <Link to="/portfolio" className="text-zinc-500 hover:text-black underline flex items-center justify-center">
-            <ArrowLeft size={16} className="mr-2" /> Back to Portfolio
+            <ArrowLeft size={16} className="mr-2" /> {t('influencer_back_to_portfolio')}
           </Link>
         </div>
       </div>
@@ -48,19 +50,21 @@ const InfluencerDetail: React.FC = () => {
     <div className="w-full min-h-screen bg-white">
       <SEO
         title={`${influencer.name} (${influencer.niche})`}
-        description={influencer.bio || `Erfahren Sie mehr über ${influencer.name}, Content Creator im Bereich ${influencer.niche} bei Vertical Influence.`}
+        description={influencer.bio || `${influencer.name}, Content Creator in ${influencer.niche}.`}
         image={influencer.imageUrl}
       />
+      
       {/* Back Link */}
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-6">
         <Link to="/portfolio" className="inline-flex items-center text-zinc-500 hover:text-black transition-colors font-medium group">
-          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Portfolio
+          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" /> {t('influencer_back_to_portfolio')}
         </Link>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-          {/* Image Section - Sticky only on Desktop (lg) */}
+          
+          {/* Image Section */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-100 shadow-sm lg:sticky lg:top-24 self-start">
             <img
               src={getAssetPath(influencer.imageUrl)}
@@ -76,9 +80,7 @@ const InfluencerDetail: React.FC = () => {
 
           {/* Info Section */}
           <div className="flex flex-col justify-center pt-4">
-            {/* Header Info */}
             <span className="inline-block text-zinc-500 font-semibold mb-2">{influencer.niche}</span>
-
             <h1 className="text-4xl md:text-6xl font-bold mb-2 tracking-tight">{influencer.name}</h1>
             <a
               href={`https://instagram.com/${influencer.handle.replace('@', '')}`}
@@ -95,7 +97,7 @@ const InfluencerDetail: React.FC = () => {
               <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
                 <div className="flex items-center text-zinc-400 mb-1 space-x-2">
                   <Users size={16} />
-                  <span className="text-xs uppercase tracking-widest font-bold">Total</span>
+                  <span className="text-xs uppercase tracking-widest font-bold">{t('influencer_total')}</span>
                 </div>
                 <p className="text-2xl font-bold text-zinc-900">{influencer.followers}</p>
               </div>
@@ -103,7 +105,6 @@ const InfluencerDetail: React.FC = () => {
               {influencer.platformStats?.tiktok && (
                 <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100 flex flex-col items-center text-center">
                   <div className="flex items-center text-zinc-400 mb-1 space-x-2">
-                    {/* TikTok Icon */}
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" /></svg>
                     <span className="text-xs uppercase tracking-widest font-bold">TikTok</span>
                   </div>
@@ -132,9 +133,9 @@ const InfluencerDetail: React.FC = () => {
               )}
             </div>
 
-            {/* Description / Bio */}
+            {/* About */}
             <div className="mb-10">
-              <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">About</h3>
+              <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">{t('influencer_about')}</h3>
               <p className="text-lg text-zinc-600 leading-relaxed font-light">
                 {influencer.bio}
               </p>
@@ -143,18 +144,16 @@ const InfluencerDetail: React.FC = () => {
             {/* Demographics */}
             {influencer.demographics && (
               <div className="mb-10">
-                <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">Demographics</h3>
+                <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">{t('demographics_title')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-zinc-50 p-6 rounded-2xl border border-zinc-100">
-                  
-                  {/* Gender & Age */}
                   <div className="space-y-6">
                     {influencer.demographics.gender && (
                       <div>
-                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Gender Distribution</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_gender')}</p>
                         <div className="space-y-2">
                           {influencer.demographics.gender.female && (
                             <div className="w-full">
-                              <div className="flex justify-between text-xs mb-1"><span>Female</span><span>{influencer.demographics.gender.female}</span></div>
+                              <div className="flex justify-between text-xs mb-1"><span>{t('demographics_female')}</span><span>{influencer.demographics.gender.female}</span></div>
                               <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
                                 <div className="h-full bg-zinc-900 rounded-full" style={{ width: influencer.demographics.gender.female }}></div>
                               </div>
@@ -162,7 +161,7 @@ const InfluencerDetail: React.FC = () => {
                           )}
                           {influencer.demographics.gender.male && (
                             <div className="w-full">
-                              <div className="flex justify-between text-xs mb-1"><span>Male</span><span>{influencer.demographics.gender.male}</span></div>
+                              <div className="flex justify-between text-xs mb-1"><span>{t('demographics_male')}</span><span>{influencer.demographics.gender.male}</span></div>
                               <div className="h-1.5 w-full bg-zinc-200 rounded-full overflow-hidden">
                                 <div className="h-full bg-zinc-400 rounded-full" style={{ width: influencer.demographics.gender.male }}></div>
                               </div>
@@ -171,10 +170,9 @@ const InfluencerDetail: React.FC = () => {
                         </div>
                       </div>
                     )}
-
                     {influencer.demographics.age && (
                       <div>
-                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Age Groups</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_age')}</p>
                         <div className="grid grid-cols-2 gap-3">
                           {influencer.demographics.age.map(a => (
                             <div key={a.range} className="bg-white p-3 rounded-lg border border-zinc-100 shadow-sm">
@@ -186,11 +184,9 @@ const InfluencerDetail: React.FC = () => {
                       </div>
                     )}
                   </div>
-
-                  {/* Top Countries */}
                   {influencer.demographics.topCountries && (
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">Top Countries</p>
+                      <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_countries')}</p>
                       <div className="space-y-3">
                         {influencer.demographics.topCountries.map(c => (
                           <div key={c.country} className="flex items-center justify-between group">
@@ -206,37 +202,25 @@ const InfluencerDetail: React.FC = () => {
                       </div>
                     </div>
                   )}
-
                 </div>
               </div>
             )}
 
-            {/* Social Platforms */}
+            {/* Social & Media Kit */}
             <div className="mb-12">
               <div className="flex justify-between items-center mb-4 border-b border-zinc-100 pb-2">
-                <h3 className="text-lg font-bold uppercase tracking-wide text-zinc-900">Social Profiles</h3>
+                <h3 className="text-lg font-bold uppercase tracking-wide text-zinc-900">{t('influencer_social_profiles')}</h3>
                 {influencer.canvaLink && (
-                  <a 
-                    href={influencer.canvaLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-bold text-zinc-500 hover:text-black transition-colors group"
-                  >
+                  <a href={influencer.canvaLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-bold text-zinc-500 hover:text-black transition-colors group">
                     <FileText size={16} className="mr-2" />
-                    View Media Kit
+                    {t('influencer_view_media_kit')}
                     <ExternalLink size={12} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 )}
               </div>
               <div className="flex flex-wrap gap-4">
                 {influencer.platforms.map(platform => (
-                  <a
-                    key={platform}
-                    href={getPlatformUrl(platform, influencer)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 px-6 py-4 bg-white border border-zinc-200 rounded-xl shadow-sm hover:border-black hover:shadow-md transition-all group"
-                  >
+                  <a key={platform} href={getPlatformUrl(platform, influencer)} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 px-6 py-4 bg-white border border-zinc-200 rounded-xl shadow-sm hover:border-black hover:shadow-md transition-all group">
                     {platform === 'Instagram' && <Instagram size={24} className="group-hover:text-pink-600 transition-colors" />}
                     {platform === 'YouTube' && <Youtube size={24} className="group-hover:text-red-600 transition-colors" />}
                     {platform === 'TikTok' && (
@@ -252,10 +236,10 @@ const InfluencerDetail: React.FC = () => {
 
             {/* CTA */}
             <div className="pt-8 border-t border-zinc-100">
-              <h3 className="text-2xl font-bold mb-6">Interested in working with {influencer.name.split(' ')[0]}?</h3>
+              <h3 className="text-2xl font-bold mb-6">{t('influencer_interested_in_working')} {influencer.name.split(' ')[0]}?</h3>
               <Link to="/contact" className="w-full md:w-auto inline-flex items-center justify-center bg-black text-white px-10 py-5 rounded-full font-bold hover:bg-zinc-800 transition-all text-lg group shadow-lg hover:shadow-xl">
                 <Mail size={22} className="mr-3" />
-                Request Booking
+                {t('influencer_request_booking')}
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </div>
