@@ -1,14 +1,15 @@
-name: Sync Data from Google Sheets
+name: Sync Data and Deploy to GH Pages
 
 on:
   schedule:
-    # Zweimal täglich um 00:00 und 12:00 UTC
     - cron: '0 0,12 * * *'
   workflow_dispatch:
-    # Erlaubt manuelles Triggern über das GitHub UI
+
+permissions:
+  contents: write
 
 jobs:
-  sync:
+  sync-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -30,9 +31,22 @@ jobs:
           CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
           CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
 
-      - name: Commit and Push changes
+      - name: Commit Updated Data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add src/data/*.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update data from google sheets [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update data from google sheets" && git push)
+
+      - name: Build Application
+        run: npm run build
+        env:
+          # Wir übergeben die URLs hier nochmal, falls npm run build den sync erneut triggert (via prebuild)
+          CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
+          CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
