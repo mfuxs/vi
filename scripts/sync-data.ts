@@ -61,25 +61,31 @@ async function syncCreators() {
         male: sanitize(row.gender_male) || undefined,
         female: sanitize(row.gender_female) || undefined,
       },
-      age: row.age_data ? row.age_data.split(',').map((s: string) => {
-        const [range, perc] = s.split(':').map(v => v.trim());
-        return { range, percentage: perc };
-      }) : undefined,
-      topCountries: row.country_data ? row.country_data.split(',').map((s: string) => {
-        const [country, perc] = s.split(':').map(v => v.trim());
-        return { country, percentage: perc };
-      }) : undefined,
+      age: (row.age_data && typeof row.age_data === 'string') ? row.age_data.split(',').map((s: string) => {
+        const parts = s.split(':').map(v => v.trim());
+        return { 
+          range: parts[0] || 'Unknown', 
+          percentage: parts[1] || '0%' 
+        };
+      }).filter(p => p.range !== 'Unknown') : undefined,
+      topCountries: (row.country_data && typeof row.country_data === 'string') ? row.country_data.split(',').map((s: string) => {
+        const parts = s.split(':').map(v => v.trim());
+        return { 
+          country: parts[0] || 'Unknown', 
+          percentage: parts[1] || '0%' 
+        };
+      }).filter(p => p.country !== 'Unknown') : undefined,
     }
   }));
 
   const validated = formatted.map((item: any) => {
     const res = InfluencerSchema.safeParse(item);
     if (!res.success) {
-      console.warn(`Validation failed for ${item.name}:`, res.error.errors[0].message);
+      console.warn(`Validation failed for ${item.name || 'Unknown'}:`, JSON.stringify(res.error.format()));
       return null;
     }
     return res.data;
-  }).filter(Boolean);
+  }).filter((i): i is any => i !== null);
 
   fs.writeFileSync(
     path.join(DATA_DIR, 'creators.json'),
