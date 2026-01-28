@@ -3,20 +3,76 @@ nav_home,Home,Home
 nav_portfolio,Talents,Talents
 nav_cases,Success Stories,Success Stories
 nav_contact,Kontakt,Contact
+nav_get_in_touch,Kontakt aufnehmen,Get in Touch
 hero_subtitle,Influencer Management Redefined,Influencer Management Redefined
 hero_title_1,Wir bauen Marken durch,We build brands through
 hero_title_2,authentische Stimmen.,authentic voices.
 hero_description,"Vertical Influence verbindet erstklassige Creator mit visionären Marken. Wir schaffen Kampagnen, die nicht nur gesehen, sondern gefühlt werden.","Vertical Influence connects premium creators with visionary brands. We create campaigns that are not just seen, but felt."
 cta_discover,Talente entdecken,Discover Talent
 cta_view_cases,Case Studies ansehen,View Case Studies
+cta_discover_talent,Entdecke Talente,Discover Talent
 section_talents_title,Featured Talent,Featured Talent
 section_talents_subtitle,Kuratierte Stimmen die bewegen. Lernen Sie unsere Top-Performer kennen.,Curated voices that resonate. Meet some of our top performers.
-footer_description,"Premium Influencer Management für Marken, die den Unterschied machen wollen. Data-driven. Authentic. Vertical.","Premium Influencer Management for brands that want to make a difference. Data-driven. Authentic. Vertical."
-booking_request,Booking Anfrage,Request Booking
-about_title,Über,About
-social_profiles,Soziale Profile,Social Profiles
-view_media_kit,Mediakit ansehen,View Media Kit
+section_stats_exclusive,Exklusive Creator,Exclusive Creators
+section_stats_reach,Monatliche Reichweite,Monthly Reach
+section_stats_campaigns,Erfolgreiche Kampagnen,Successful Campaigns
+section_about_title,Vertical Influence by inSocial,Vertical Influence by inSocial
+section_about_text,"Als spezialisierte Unit von inSocial fokussieren wir uns auf vertikale Videoformate und High-Impact Personalities. Unsere Philosophie ist einfach: Datengetriebene Strategie trifft auf menschliche Kreativität. Wir managen nicht nur Influencer, wir bauen Karrieren und Markenbotschafter.","As a specialized unit of inSocial, we focus on vertical video formats and high-impact personalities. Our philosophy is simple: data-driven strategy meets human creativity. We don't just manage influencers, we build careers and brand ambassadors."
+section_recent_work_title,Aktuelle Projekte,Recent Work
+section_recent_work_subtitle,Echte Ergebnisse durch authentisches Storytelling.,Real results driven by authentic storytelling.
+section_cta_reach_title,Bereit, deine Reichweite zu vergrößern?,Ready to amplify your reach?
+section_cta_reach_text,Lass uns besprechen, wie wir deine Marke mit den richtigen Stimmen stärken können.,Let's discuss how we can elevate your brand with the right voices.
+portfolio_title,Unsere Talente,Our Talent
+portfolio_subtitle,"Kuratiert, authentisch und reichweitenstark. Entdecken Sie unsere exklusive Auswahl an Content Creatorn.","Curated, authentic and high-reach. Discover our exclusive selection of content creators."
+portfolio_filter_all,Alle,All
+portfolio_empty_state,In dieser Kategorie wurden noch keine Talente gefunden.,No talents found in this category yet.
+portfolio_view_profile,Profil ansehen,View Profile
+portfolio_total_followers,Gesamt-Follower,Total Followers
+cases_title,Ausgewählte Arbeiten,Selected Work
+cases_subtitle,Ergebnisse, die für sich sprechen. Hier zeigen wir, wie wir Markenbotschaften in kulturelle Momente verwandeln.,Results that speak for themselves. Here we show how we turn brand messages into cultural moments.
+cases_download_pdf,Case Study herunterladen (PDF),Download Case Study (PDF)
+cases_view_full,Vollständigen Case ansehen,View Full Case
+contact_title,Kontaktieren Sie uns,Contact Us
+contact_subtitle,"Bereit für das nächste Level? Schreiben Sie uns eine Nachricht.","Ready for the next level? Drop us a message."
+contact_form_name,Name,Name
+contact_form_email,E-Mail,Email
+contact_form_subject,Betreff,Subject
+contact_form_message,Nachricht,Message
+contact_form_send,Nachricht senden,Send Message
+contact_info_title,Kontaktinformationen,Contact Information
+contact_office_title,Unser Büro,Our Office
+influencer_not_found,Influencer nicht gefunden,Influencer not found
+influencer_back_to_portfolio,Zurück zum Portfolio,Back to Portfolio
+influencer_total,Gesamt,Total
+influencer_about,Über,About
+influencer_social_profiles,Soziale Profile,Social Profiles
+influencer_view_media_kit,Mediakit ansehen,View Media Kit
+influencer_interested_in_working,Interessiert an einer Zusammenarbeit mit,Interested in working with
+influencer_request_booking,Booking Anfrage,Request Booking
 demographics_title,Demografien,Demographics
-gender_distribution,Geschlechterverteilung,Gender Distribution
-age_groups,Altersgruppen,Age Groups
-top_countries,Top Länder,Top Countries
+demographics_gender,Geschlechterverteilung,Gender Distribution
+demographics_female,Weiblich,Female
+demographics_male,Männlich,Male
+demographics_age,Altersgruppen,Age Groups
+demographics_countries,Top Länder,Top Countries
+footer_rights,Alle Rechte vorbehalten.,All rights reserved.
+footer_description,"Premium Influencer Management für Marken, die den Unterschied machen wollen. Data-driven. Authentic. Vertical.","Premium Influencer Management for brands that want to make a difference. Data-driven. Authentic. Vertical."
+footer_navigation,Navigation,Navigation
+footer_legal,Rechtliches,Legal
+footer_connect,Connect,Connect
+seo_home_title,Home,Home
+seo_home_desc,"Vertical Influence verbindet erstklassige Creator mit visionären Marken. Wir schaffen Kampagnen, die nicht nur gesehen, sondern gefühlt werden.","Vertical Influence connects premium creators with visionary brands. We create campaigns that are not just seen, but felt."
+seo_portfolio_title,Unsere Talente,Our Talent
+seo_portfolio_desc,Entdecken Sie unsere exklusive Auswahl an Content Creatorn. Kuratiert, authentisch und reichweitenstark.,Discover our exclusive selection of content creators. Curated, authentic and high-reach.
+seo_cases_title,Case Studies,Case Studies
+seo_cases_desc,Ausgewählte Kampagnen und Erfolgsgeschichten. Sehen Sie, wie wir Markenbotschaften in kulturelle Momente verwandeln.,Selected campaigns and success stories. See how we turn brand messages into cultural moments.
+seo_contact_title,Kontakt,Contact
+seo_contact_desc,Nehmen Sie Kontakt mit Vertical Influence auf. Wir freuen uns auf Ihre Anfrage.,Get in touch with Vertical Influence. We look forward to your inquiry.
+seo_influencer_desc_prefix,Erfahren Sie mehr über,Learn more about
+seo_influencer_desc_mid,im Bereich,Content Creator in
+seo_influencer_desc_suffix,bei Vertical Influence.,at Vertical Influence.
+404_title,404 - Seite nicht gefunden,404 - Page Not Found
+404_text,Die gesuchte Seite existiert leider nicht.,The page you are looking for does not exist.
+404_back_home,Zurück zur Startseite,Back Home
+legal_impressum,Impressum,Impressum
+legal_datenschutz,Datenschutz,Privacy Policy
