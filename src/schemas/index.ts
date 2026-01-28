@@ -54,5 +54,7 @@ export const CaseStudySchema = z.object({
   pdfUrl: z.string().optional(),
 });
 
+export const TranslationSchema = z.record(z.string(), z.record(z.string(), z.string()));
+
 export type Influencer = z.infer<typeof InfluencerSchema>;
 export type CaseStudy = z.infer<typeof CaseStudySchema>;

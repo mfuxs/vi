@@ -26,8 +26,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Sync Data
-        run: npm run sync-data
+        run: npm run sync-translations && npm run sync-data
         env:
+          TRANSLATIONS_CSV_URL: ${{ secrets.TRANSLATIONS_CSV_URL }}
           CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
           CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
 

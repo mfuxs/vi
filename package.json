@@ -12,7 +12,8 @@
     "generate-sitemap": "tsx scripts/generate-sitemap.ts",
     "sync-data": "tsx scripts/sync-data.ts",
     "sync-assets": "tsx scripts/sync-assets.ts",
-    "prebuild": "npm run sync-data && npm run sync-assets && npm run generate-sitemap"
+    "sync-translations": "tsx scripts/sync-translations.ts",
+    "prebuild": "npm run sync-translations && npm run sync-data && npm run sync-assets && npm run generate-sitemap"
   },
   "dependencies": {
     "axios": "^1.13.4",

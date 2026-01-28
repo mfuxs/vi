@@ -9,6 +9,7 @@ import InfluencerDetail from './pages/InfluencerDetail';
 import NotFound from './pages/NotFound';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import { LanguageProvider } from './context/LanguageContext';
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -23,21 +24,23 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/:id" element={<InfluencerDetail />} />
-          <Route path="/cases" element={<Cases />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/datenschutz" element={<Datenschutz />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<InfluencerDetail />} />
+            <Route path="/cases" element={<Cases />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </LanguageProvider>
   );
 };
 
