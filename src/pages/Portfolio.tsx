@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
-import { influencers } from '../data';
-import { Link } from 'react-router-dom';
-import { Instagram, Youtube, Linkedin, Search } from 'lucide-react';
-import { Influencer } from '../types';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
 import { useLanguage } from '../context/LanguageContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Portfolio: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -31,7 +27,12 @@ const Portfolio: React.FC = () => {
         description={t('seo_portfolio_desc')}
       />
       <div className="max-w-7xl mx-auto px-6 py-24">
-        <div className="mb-16 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 text-center"
+        >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('portfolio_title')}</h1>
           <p className="text-zinc-500 max-w-2xl mx-auto mb-10">
             {t('portfolio_subtitle')}
@@ -45,7 +46,7 @@ const Portfolio: React.FC = () => {
             <input
               type="text"
               placeholder={language === 'en' ? 'Search creators...' : 'Creator suchen...'}
-              className="w-full pl-12 pr-4 py-4 bg-zinc-50 border border-zinc-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-black transition-all"
+              className="w-full pl-12 pr-4 py-4 bg-zinc-50 border border-zinc-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-black transition-all shadow-sm"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -53,9 +54,12 @@ const Portfolio: React.FC = () => {
 
           {/* Filter Chips */}
           <div className="flex flex-wrap justify-center gap-3">
-            {categories.map(category => (
-              <button
+            {categories.map((category, idx) => (
+              <motion.button
                 key={category}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: idx * 0.05 }}
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${activeCategory === category
                   ? 'bg-black text-white shadow-lg scale-105'
@@ -63,22 +67,40 @@ const Portfolio: React.FC = () => {
                   }`}
               >
                 {category === 'All' ? t('portfolio_filter_all') : category}
-              </button>
+              </motion.button>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredInfluencers.map((influencer) => (
-            <InfluencerCard key={influencer.id} data={influencer} />
-          ))}
-        </div>
+        <motion.div 
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <AnimatePresence mode='popLayout'>
+            {filteredInfluencers.map((influencer) => (
+              <motion.div
+                key={influencer.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+              >
+                <InfluencerCard data={influencer} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
 
         {filteredInfluencers.length === 0 && (
-          <div className="text-center py-20 text-zinc-400">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-20 text-zinc-400"
+          >
             <p>{t('portfolio_empty_state')}</p>
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
