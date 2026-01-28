@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <nav className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-wide">
             <Link to="/" className={isActive('/')}>{t('nav_home')}</Link>
             <Link to="/portfolio" className={isActive('/portfolio')}>{t('nav_portfolio')}</Link>
-            <Link to="/cases" className={isActive('/cases')}>{t('nav_cases')}</Link>
+            {/* <Link to="/cases" className={isActive('/cases')}>{t('nav_cases')}</Link> */}
             
             {/* Desktop Language Switcher */}
             <div className="flex items-center space-x-3 border-l border-zinc-200 pl-8 mr-4">
@@ -43,7 +43,34 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 title="English"
                 className={`w-6 h-6 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 border ${language === 'en' ? 'border-black ring-2 ring-zinc-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'}`}
               >
-                <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#00247d" d="M0 0h512v512H0z"/><path fill="#fff" d="M512 0v64L322 256l190 192v64h-64L256 322 64 512H0v-64l192-192L0 64V0h64l192 192L448 0z"/><path fill="#cf142b" d="M512 0v16L288 240h224v32H288l224 224v16h-16L272 288v224h-32V288L16 512H0v-16l224-224H0v-32h224L0 16V0h16l224 224V0h32v224L496 0z"/></svg>
+                <svg viewBox="0 0 512 512" className="w-full h-full">
+                  <path fill="#bd3d44" d="M0 0h512v448H0z"/>
+                  <path stroke="#fff" strokeWidth="37" d="M0 32h512M0 106h512M0 180h512M0 254h512M0 328h512M0 402h512"/>
+                  <path fill="#192f5d" d="M0 0h255v240H0z"/>
+                  <circle cx="42" cy="38" r="10" fill="#fff"/>
+                  <circle cx="84" cy="38" r="10" fill="#fff"/>
+                  <circle cx="126" cy="38" r="10" fill="#fff"/>
+                  <circle cx="168" cy="38" r="10" fill="#fff"/>
+                  <circle cx="210" cy="38" r="10" fill="#fff"/>
+                  <circle cx="63" cy="75" r="10" fill="#fff"/>
+                  <circle cx="105" cy="75" r="10" fill="#fff"/>
+                  <circle cx="147" cy="75" r="10" fill="#fff"/>
+                  <circle cx="189" cy="75" r="10" fill="#fff"/>
+                  <circle cx="42" cy="112" r="10" fill="#fff"/>
+                  <circle cx="84" cy="112" r="10" fill="#fff"/>
+                  <circle cx="126" cy="112" r="10" fill="#fff"/>
+                  <circle cx="168" cy="112" r="10" fill="#fff"/>
+                  <circle cx="210" cy="112" r="10" fill="#fff"/>
+                  <circle cx="63" cy="149" r="10" fill="#fff"/>
+                  <circle cx="105" cy="149" r="10" fill="#fff"/>
+                  <circle cx="147" cy="149" r="10" fill="#fff"/>
+                  <circle cx="189" cy="149" r="10" fill="#fff"/>
+                  <circle cx="42" cy="186" r="10" fill="#fff"/>
+                  <circle cx="84" cy="186" r="10" fill="#fff"/>
+                  <circle cx="126" cy="186" r="10" fill="#fff"/>
+                  <circle cx="168" cy="186" r="10" fill="#fff"/>
+                  <circle cx="210" cy="186" r="10" fill="#fff"/>
+                </svg>
               </button>
             </div>
 
@@ -63,7 +90,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-zinc-100 p-6 flex flex-col space-y-6 text-center shadow-lg">
             <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_home')}</Link>
             <Link to="/portfolio" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_portfolio')}</Link>
-            <Link to="/cases" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_cases')}</Link>
+            {/* <Link to="/cases" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_cases')}</Link> */}
             
             {/* Mobile Language Switcher */}
             <div className="flex justify-center items-center space-x-6 py-4 border-y border-zinc-100">
@@ -81,7 +108,34 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 className={`flex items-center space-x-2 ${language === 'en' ? 'font-bold text-black' : 'text-zinc-400'}`}
               >
                 <div className="w-6 h-6 rounded-full overflow-hidden border border-zinc-200">
-                  <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#00247d" d="M0 0h512v512H0z"/><path fill="#fff" d="M512 0v64L322 256l190 192v64h-64L256 322 64 512H0v-64l192-192L0 64V0h64l192 192L448 0z"/><path fill="#cf142b" d="M512 0v16L288 240h224v32H288l224 224v16h-16L272 288v224h-32V288L16 512H0v-16l224-224H0v-32h224L0 16V0h16l224 224V0h32v224L496 0z"/></svg>
+                  <svg viewBox="0 0 512 512" className="w-full h-full">
+                    <path fill="#bd3d44" d="M0 0h512v448H0z"/>
+                    <path stroke="#fff" strokeWidth="37" d="M0 32h512M0 106h512M0 180h512M0 254h512M0 328h512M0 402h512"/>
+                    <path fill="#192f5d" d="M0 0h255v240H0z"/>
+                    <circle cx="42" cy="38" r="10" fill="#fff"/>
+                    <circle cx="84" cy="38" r="10" fill="#fff"/>
+                    <circle cx="126" cy="38" r="10" fill="#fff"/>
+                    <circle cx="168" cy="38" r="10" fill="#fff"/>
+                    <circle cx="210" cy="38" r="10" fill="#fff"/>
+                    <circle cx="63" cy="75" r="10" fill="#fff"/>
+                    <circle cx="105" cy="75" r="10" fill="#fff"/>
+                    <circle cx="147" cy="75" r="10" fill="#fff"/>
+                    <circle cx="189" cy="75" r="10" fill="#fff"/>
+                    <circle cx="42" cy="112" r="10" fill="#fff"/>
+                    <circle cx="84" cy="112" r="10" fill="#fff"/>
+                    <circle cx="126" cy="112" r="10" fill="#fff"/>
+                    <circle cx="168" cy="112" r="10" fill="#fff"/>
+                    <circle cx="210" cy="112" r="10" fill="#fff"/>
+                    <circle cx="63" cy="149" r="10" fill="#fff"/>
+                    <circle cx="105" cy="149" r="10" fill="#fff"/>
+                    <circle cx="147" cy="149" r="10" fill="#fff"/>
+                    <circle cx="189" cy="149" r="10" fill="#fff"/>
+                    <circle cx="42" cy="186" r="10" fill="#fff"/>
+                    <circle cx="84" cy="186" r="10" fill="#fff"/>
+                    <circle cx="126" cy="186" r="10" fill="#fff"/>
+                    <circle cx="168" cy="186" r="10" fill="#fff"/>
+                    <circle cx="210" cy="186" r="10" fill="#fff"/>
+                  </svg>
                 </div>
                 <span>English</span>
               </button>
@@ -113,7 +167,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-4 text-zinc-500">{t('footer_navigation')}</h3>
               <ul className="space-y-3">
                 <li><Link to="/portfolio" className="hover:text-zinc-300 transition-colors">{t('nav_portfolio')}</Link></li>
-                <li><Link to="/cases" className="hover:text-zinc-300 transition-colors">{t('nav_cases')}</Link></li>
+                {/* <li><Link to="/cases" className="hover:text-zinc-300 transition-colors">{t('nav_cases')}</Link></li> */}
                 <li><Link to="/contact" className="hover:text-zinc-300 transition-colors">{t('nav_contact')}</Link></li>
               </ul>
             </div>

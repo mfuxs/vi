@@ -41,9 +41,9 @@ const Home: React.FC = () => {
               {t('cta_discover')}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Link>
-            <Link to="/cases" className="px-8 py-4 rounded-full font-medium text-zinc-600 hover:text-black border border-transparent hover:border-zinc-200 transition-all">
+            {/* <Link to="/cases" className="px-8 py-4 rounded-full font-medium text-zinc-600 hover:text-black border border-transparent hover:border-zinc-200 transition-all">
               {t('cta_view_cases')}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Cases */}
+      {/* Featured Cases 
       <section className="py-24 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-end mb-12">
@@ -154,6 +154,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Contact CTA */}
       <section className="py-32 bg-white">
