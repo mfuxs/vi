@@ -61,17 +61,28 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Team Section (Placeholder / Simple Text) */}
+        {/* Team Section */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="bg-black text-white rounded-3xl p-12 md:p-24 text-center"
+          className="bg-black text-white rounded-3xl p-12 md:p-24 text-center overflow-hidden relative"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">{t('about_team_title')}</h2>
-          <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
-            {t('about_team_text')}
-          </p>
+          {/* Background Image Placeholder */}
+          <div className="absolute inset-0 opacity-20">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+              alt="Team Background" 
+              className="w-full h-full object-cover grayscale"
+            />
+          </div>
+          
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">{t('about_team_title')}</h2>
+            <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
+              {t('about_team_text')}
+            </p>
+          </div>
         </motion.div>
       </div>
     </div>

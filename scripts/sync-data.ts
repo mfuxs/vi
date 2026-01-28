@@ -15,7 +15,6 @@ const DATA_DIR = path.resolve('src/data');
 function sanitize(text: string): string {
   if (!text) return '';
   return text
-    .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 }
