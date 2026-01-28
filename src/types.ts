@@ -12,6 +12,9 @@ export interface Influencer {
     tiktok?: string;
     instagram?: string;
     youtube?: string;
+    tiktokHandle?: string;
+    instagramHandle?: string;
+    youtubeHandle?: string;
   };
 }
 

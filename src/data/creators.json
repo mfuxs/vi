@@ -1,10 +1,4 @@
-import { Influencer, CaseStudy } from './types';
-
-// DATA MANAGEMENT
-// WICHTIG: Hier können Influencer und Cases bearbeitet, hinzugefügt oder gelöscht werden.
-// Das Design passt sich automatisch an.
-
-export const influencers: Influencer[] = [
+[
   {
     "id": "1",
     "name": "Affeaufbike",
@@ -73,7 +67,7 @@ export const influencers: Influencer[] = [
     "category": "Tech",
     "followers": "674.8K",
     "imageUrl": "/vi/images/creators/bens_hardware.jpeg",
-    "bio": "Tech creator specializing in PC builds, hardware reviews, and gaming setup tutorials with a focus on making tech accessible and engaging.\r\n",
+    "bio": "Tech creator specializing in PC builds, hardware reviews, and gaming setup tutorials with a focus on making tech accessible and engaging.",
     "platforms": [
       "TikTok",
       "Instagram",
@@ -123,7 +117,7 @@ export const influencers: Influencer[] = [
   },
   {
     "id": "7",
-    "name": "Claudelle.loves ",
+    "name": "Claudelle.loves",
     "handle": "@claudelle.loves",
     "niche": "Lifestyle / Health",
     "category": "Lifestyle & Health",
@@ -361,7 +355,7 @@ export const influencers: Influencer[] = [
     "id": "20",
     "name": "Crackingchris",
     "handle": "@crackingchris",
-    "niche": "Health / Sports ",
+    "niche": "Health / Sports",
     "category": "Lifestyle & Health",
     "followers": "1.1M",
     "imageUrl": "/vi/images/creators/crackingchris.jpeg",
@@ -753,7 +747,7 @@ export const influencers: Influencer[] = [
     "category": "Tech",
     "followers": "1.8M",
     "imageUrl": "/vi/images/creators/tiktoktechnik.jpeg",
-    "bio": "Tech creator known for delivering concise and practical tips on smartphones, apps, and gadgets. With over 1.2 million followers on TikTok and a significant presence on Instagram, he shares content that includes iPhone hacks, app recommendations, and gadget reviews. His engaging and informative style resonates with a broad audience seeking accessible tech insights.\r\n",
+    "bio": "Tech creator known for delivering concise and practical tips on smartphones, apps, and gadgets. With over 1.2 million followers on TikTok and a significant presence on Instagram, he shares content that includes iPhone hacks, app recommendations, and gadget reviews. His engaging and informative style resonates with a broad audience seeking accessible tech insights.",
     "platforms": [
       "TikTok",
       "Instagram",
@@ -769,7 +763,7 @@ export const influencers: Influencer[] = [
     "id": "43",
     "name": "Mike Imos",
     "handle": "@mikeimos",
-    "niche": "Craftsmanship ",
+    "niche": "Craftsmanship",
     "category": "Handwerk & DIY",
     "followers": "163K",
     "imageUrl": "https://ui-avatars.com/api/?name=Mike%20Imos&background=random",
@@ -785,7 +779,7 @@ export const influencers: Influencer[] = [
     "id": "44",
     "name": "Dachdeckerin Fabienne",
     "handle": "@dachdeckerinfabienne",
-    "niche": "Craftsmanship ",
+    "niche": "Craftsmanship",
     "category": "Handwerk & DIY",
     "followers": "33K",
     "imageUrl": "https://ui-avatars.com/api/?name=Dachdeckerin%20Fabienne&background=random",
@@ -801,7 +795,7 @@ export const influencers: Influencer[] = [
     "id": "45",
     "name": "Rene Lang",
     "handle": "@renelang",
-    "niche": "Craftsmanship ",
+    "niche": "Craftsmanship",
     "category": "Handwerk & DIY",
     "followers": "146K",
     "imageUrl": "https://ui-avatars.com/api/?name=Rene%20Lang&background=random",
@@ -813,60 +807,4 @@ export const influencers: Influencer[] = [
       "tiktok": "146K"
     }
   }
-];
-
-export const caseStudies: CaseStudy[] = [
-  {
-    id: '1',
-    client: 'HOMAG',
-    title: 'Benberger x HOMAG',
-    description: 'Eine Partnerschaft zwischen Ben Berger und der HOMAG AG, die Innovation im Handwerk beleuchtet. Der Case demonstriert, wie modernes Schreinerhandwerk durch technologischen Fortschritt wettbewerbsfähig bleibt und verbindet Tradition mit High-Tech-Lösungen. Ein Paradebeispiel für die authentische Inszenierung von B2B-Themen im Social-Media-Kontext.',
-    stats: [
-      { label: 'Focus', value: 'B2B Innovation' },
-      { label: 'Channel', value: 'Instagram/TikTok' }
-    ],
-    imageUrl: '/vi/images/cases/benberger_x_homag.png',
-    tags: ['Handwerk', 'Innovation', 'B2B'],
-    pdfUrl: '/vi/cases/benberger_x_homag.pdf'
-  },
-  {
-    id: '2',
-    client: 'PDR',
-    title: 'PDR x Vertical Influence',
-    description: 'Strategischer Kampagnenflight für PDR mit Fokus auf gezielter Creator-Auswahl und Performance-Erwartungshaltung. Der Case gewährt Einblicke in die strategische Herleitung, die Auswahl passender Influencer und den Split der Maßnahmen, um maximale Relevanz in der Zielgruppe zu erzeugen.',
-    stats: [
-      { label: 'Scope', value: '3 Videos' },
-      { label: 'Phase', value: 'Strategy & Creation' }
-    ],
-    imageUrl: '/vi/images/cases/pdr_x_vertical_influence_3.png',
-    tags: ['Strategy', 'Creator Selection', 'Performance'],
-    pdfUrl: '/vi/cases/pdr_x_vertical_influence_3.pdf'
-  },
-  {
-    id: '3',
-    client: 'Vodafone',
-    title: 'Wow Da Phone - Gen-Z Targeting',
-    description: 'Ein Hardware-basiertes Content-Format speziell für die Gen-Z. Da 21% der Zielgruppe TikTok als Suchmaschine nutzen, setzt Vodafone auf 9:16 Content, um dort präsent zu sein, wo die Kommunikation stattfindet. Der Case analysiert das Suchverhalten junger Zielgruppen und leitet daraus ein maßgeschneidertes Kommunikationskonzept ab.',
-    stats: [
-      { label: 'Insight', value: '21% Gen-Z Search' },
-      { label: 'Format', value: '9:16 Native' }
-    ],
-    imageUrl: '/vi/images/cases/wow_da_phone.png',
-    tags: ['Gen-Z', 'TikTok', 'Strategy'],
-    pdfUrl: '/vi/cases/wow_da_phone.pdf'
-  },
-  {
-    id: '4',
-    client: 'Google / Vodafone',
-    title: 'Pixel 10 Pro Endreport',
-    description: 'Detaillierter Endreport zur "Wow da Phone" Kampagne mit Fokus auf das Google Pixel 10 Pro. Zusammenfassung der Highlights, Performance-KPIs und Key-Learnings der Aktivierung. Zeigt auf, wie Tech-Produkte emotional und nativ in den Feed der Zielgruppe integriert werden können.',
-    stats: [
-      { label: 'Clicks', value: '38.5k' },
-      { label: 'Metric', value: 'High VTR' },
-      { label: 'Product', value: 'Pixel 10 Pro' }
-    ],
-    imageUrl: '/vi/images/cases/6597.png',
-    tags: ['Tech', 'Report', 'Google Pixel'],
-    pdfUrl: '/vi/cases/6597.pdf'
-  }
-];
+]

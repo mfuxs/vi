@@ -1,10 +1,12 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 const Datenschutz: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
+      <SEO title="Datenschutz" description="Datenschutzerklärung von Vertical Influence by inSocial." robots="noindex" />
       <h1 className="text-4xl font-bold mb-12 uppercase tracking-tight">Datenschutzerklärung</h1>
-      
+
       <div className="prose max-w-none text-zinc-700 space-y-8">
         <p>
           Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).

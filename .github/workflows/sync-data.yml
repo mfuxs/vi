@@ -1,0 +1,40 @@
+name: Sync Data from Google Sheets
+
+on:
+  schedule:
+    # Zweimal täglich um 00:00 und 12:00 UTC
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+    # Erlaubt manuelles Triggern über das GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: vi/package-lock.json
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+        working-directory: vi
+
+      - name: Sync Data
+        run: npm run sync-data
+        working-directory: vi
+        env:
+          CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
+          CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add vi/src/data/*.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update data from google sheets [skip ci]" && git push)

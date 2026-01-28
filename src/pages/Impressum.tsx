@@ -1,10 +1,12 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 const Impressum: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
+      <SEO title="Impressum" description="Impressum von Vertical Influence by inSocial." robots="noindex" />
       <h1 className="text-4xl font-bold mb-12 uppercase tracking-tight">Impressum</h1>
-      
+
       <div className="prose max-w-none text-zinc-700 space-y-6">
         <p>
           <strong>Angaben gemäß § 5 TMG</strong><br />
