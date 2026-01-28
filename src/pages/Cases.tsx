@@ -88,5 +88,3 @@ const Cases: React.FC = () => {
 };
 
 export default Cases;
-
-export default Cases;
