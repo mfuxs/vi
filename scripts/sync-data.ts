@@ -12,6 +12,16 @@ const CASES_CSV_URL = process.env.CASES_CSV_URL || '';
 
 const DATA_DIR = path.resolve('src/data');
 
+function sanitize(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 async function syncCreators() {
   if (!CREATORS_CSV_URL) {
     console.log('Skipping Creators Sync: No URL provided.');
@@ -29,21 +39,21 @@ async function syncCreators() {
 
   const formatted = records.map((row: any) => ({
     id: row.id,
-    name: row.name,
-    handle: row.handle,
-    niche: row.niche,
-    category: row.category,
-    followers: row.followers,
+    name: sanitize(row.name),
+    handle: sanitize(row.handle),
+    niche: sanitize(row.niche),
+    category: sanitize(row.category),
+    followers: sanitize(row.followers),
     imageUrl: row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, ''),
-    bio: row.bio,
-    platforms: row.platforms.split(',').map((p: string) => p.trim()),
+    bio: sanitize(row.bio),
+    platforms: row.platforms.split(',').map((p: string) => sanitize(p.trim())),
     platformStats: {
-      tiktok: row.tiktok || undefined,
-      instagram: row.instagram || undefined,
-      youtube: row.youtube || undefined,
-      tiktokHandle: row.tiktok_handle || undefined,
-      instagramHandle: row.instagram_handle || undefined,
-      youtubeHandle: row.youtube_handle || undefined,
+      tiktok: sanitize(row.tiktok) || undefined,
+      instagram: sanitize(row.instagram) || undefined,
+      youtube: sanitize(row.youtube) || undefined,
+      tiktokHandle: sanitize(row.tiktok_handle) || undefined,
+      instagramHandle: sanitize(row.instagram_handle) || undefined,
+      youtubeHandle: sanitize(row.youtube_handle) || undefined,
     }
   }));
 
@@ -86,12 +96,12 @@ async function syncCases() {
 
     return {
       id: row.id,
-      client: row.client,
-      title: row.title,
-      description: row.description,
-      stats: stats,
+      client: sanitize(row.client),
+      title: sanitize(row.title),
+      description: sanitize(row.description),
+      stats: stats.map(s => ({ label: sanitize(s.label), value: sanitize(s.value) })),
       imageUrl: row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, ''),
-      tags: row.tags.split(',').map((t: string) => t.trim()),
+      tags: row.tags.split(',').map((t: string) => sanitize(t.trim())),
       pdfUrl: row.pdfUrl || undefined
     };
   });
