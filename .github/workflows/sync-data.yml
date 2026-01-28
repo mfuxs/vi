@@ -31,12 +31,19 @@ jobs:
           CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
           CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
 
+      - name: Sync Assets (GDrive Images)
+        run: npm run sync-assets
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+
       - name: Commit Updated Data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add src/data/*.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update data from google sheets" && git push)
+          git add public/images/creators/*
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update data and assets from google" && git push)
 
       - name: Build Application
         run: npm run build

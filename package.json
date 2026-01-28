@@ -11,11 +11,13 @@
     "deploy": "gh-pages -d dist",
     "generate-sitemap": "tsx scripts/generate-sitemap.ts",
     "sync-data": "tsx scripts/sync-data.ts",
-    "prebuild": "npm run sync-data && npm run generate-sitemap"
+    "sync-assets": "tsx scripts/sync-assets.ts",
+    "prebuild": "npm run sync-data && npm run sync-assets && npm run generate-sitemap"
   },
   "dependencies": {
     "axios": "^1.13.4",
     "csv-parse": "^6.1.0",
+    "googleapis": "^170.1.0",
     "lucide-react": "^0.563.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
