@@ -91,7 +91,7 @@
   },
   "section_about_text": {
     "de": "Als spezialisierte Unit von inSocial fokussieren wir uns auf vertikale Videoformate und High-Impact Personalities. Unsere Philosophie ist einfach: Datengetriebene Strategie trifft auf menschliche Kreativität. Wir managen nicht nur Influencer, wir bauen Karrieren und Markenbotschafter.",
-    "en": "As a specialized unit of inSocial, we focus on vertical video formats and high-impact personalities. Our philosophy is simple: data-driven strategy meets human creativity. We don&#039;t just manage influencers, we build careers and brand ambassadors.",
+    "en": "As a specialized unit of inSocial, we focus on vertical video formats and high-impact personalities. Our philosophy is simple: data-driven strategy meets human creativity. We don't just manage influencers, we build careers and brand ambassadors.",
     "": ""
   },
   "section_recent_work_title": {
@@ -205,8 +205,8 @@
     "": ""
   },
   "contact_hero_title": {
-    "de": "Let&#039;s create something together.",
-    "en": "Let&#039;s create something together.",
+    "de": "Let's create something together.",
+    "en": "Let's create something together.",
     "": ""
   },
   "contact_hero_text": {
@@ -397,6 +397,46 @@
   "legal_datenschutz": {
     "de": "Datenschutz",
     "en": "Privacy Policy",
+    "": ""
+  },
+  "unit_handwerk_name": {
+    "de": "Handwerksunit",
+    "en": "Craftsmanship Unit",
+    "": ""
+  },
+  "unit_handwerk_claim": {
+    "de": "Tradition trifft auf digitale Reichweite.",
+    "en": "Tradition meets digital reach.",
+    "": ""
+  },
+  "unit_handwerk_desc": {
+    "de": "Unsere Handwerksunit vereint echte Experten und Meister ihres Fachs. Wir bringen authentisches Handwerk in die digitale Welt und schaffen Verbindungen, die Bestand haben.",
+    "en": "Our craftsmanship unit brings together real experts and masters of their trade. We bring authentic craftsmanship to the digital world and create connections that last.",
+    "": ""
+  },
+  "unit_technik_name": {
+    "de": "Technik-Unit",
+    "en": "Tech Unit",
+    "": ""
+  },
+  "unit_technik_claim": {
+    "de": "Die Zukunft im digitalen Fokus.",
+    "en": "Focusing on the digital future.",
+    "": ""
+  },
+  "unit_technik_desc": {
+    "de": "Von Hardware-Experten bis zu Software-Pionieren: Unsere Technik-Unit repräsentiert die Speerspitze der digitalen Innovation und macht komplexe Themen für Millionen greifbar.",
+    "en": "From hardware experts to software pioneers: our tech unit represents the spearhead of digital innovation and makes complex topics tangible for millions.",
+    "": ""
+  },
+  "nav_handwerk": {
+    "de": "Handwerk",
+    "en": "Craft",
+    "": ""
+  },
+  "nav_technik": {
+    "de": "Technik",
+    "en": "Tech",
     "": ""
   }
 }
