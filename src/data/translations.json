@@ -9,6 +9,21 @@
     "en": "Talents",
     "": ""
   },
+  "nav_handwerk": {
+    "de": "Handwerk",
+    "en": "Craft",
+    "": ""
+  },
+  "nav_technik": {
+    "de": "Technik",
+    "en": "Tech",
+    "": ""
+  },
+  "nav_about": {
+    "de": "Über uns",
+    "en": "About Us",
+    "": ""
+  },
   "nav_cases": {
     "de": "Success Stories",
     "en": "Success Stories",
@@ -113,6 +128,91 @@
     "de": "Lass uns besprechen",
     "en": "wie wir deine Marke mit den richtigen Stimmen stärken können.",
     "": ""
+  },
+  "unit_handwerk_name": {
+    "de": "Handwerksunit",
+    "en": "Craftsmanship Unit",
+    "": ""
+  },
+  "unit_handwerk_claim": {
+    "de": "Tradition trifft auf digitale Reichweite.",
+    "en": "Tradition meets digital reach.",
+    "": ""
+  },
+  "unit_handwerk_desc": {
+    "de": "Unsere Handwerksunit vereint echte Experten und Meister ihres Fachs. Wir bringen authentisches Handwerk in die digitale Welt und schaffen Verbindungen, die Bestand haben.",
+    "en": "Our craftsmanship unit brings together real experts and masters of their trade. We bring authentic craftsmanship to the digital world and create connections that last.",
+    "": ""
+  },
+  "unit_technik_name": {
+    "de": "Technik-Unit",
+    "en": "Tech Unit",
+    "": ""
+  },
+  "unit_technik_claim": {
+    "de": "Die Zukunft im digitalen Fokus.",
+    "en": "Focusing on the digital future.",
+    "": ""
+  },
+  "unit_technik_desc": {
+    "de": "Von Hardware-Experten bis zu Software-Pionieren: Unsere Technik-Unit repräsentiert die Speerspitze der digitalen Innovation und macht komplexe Themen für Millionen greifbar.",
+    "en": "From hardware experts to software pioneers: our tech unit represents the spearhead of digital innovation and makes complex topics tangible for millions.",
+    "": ""
+  },
+  "about_hero_title": {
+    "de": "Wir sind Vertical Influence.",
+    "en": "We are Vertical Influence.",
+    "": ""
+  },
+  "about_hero_text": {
+    "de": "Eine Agentur, geboren aus der Leidenschaft für authentisches Storytelling und digitale Kultur. Wir verbinden Marken mit Menschen, nicht nur mit Followern.",
+    "en": "An agency born from a passion for authentic storytelling and digital culture. We connect brands with people, not just followers.",
+    "": ""
+  },
+  "about_values_title": {
+    "de": "Unsere Werte",
+    "en": "Our Values",
+    "": ""
+  },
+  "about_value_1_title": {
+    "de": "Authentizität",
+    "en": "Authenticity",
+    "": ""
+  },
+  "about_value_1_text": {
+    "de": "Wir glauben an echte Geschichten und unverfälschte Stimmen.",
+    "en": "We believe in real stories and genuine voices.",
+    "": ""
+  },
+  "about_value_2_title": {
+    "de": "Qualität",
+    "en": "Quality",
+    "": ""
+  },
+  "about_value_2_text": {
+    "de": "Klasse statt Masse. Wir kuratieren unser Netzwerk handverlesen.",
+    "en": "Quality over quantity. We curate our network by hand.",
+    "": ""
+  },
+  "about_value_3_title": {
+    "de": "Innovation",
+    "en": "Innovation",
+    "": ""
+  },
+  "about_value_3_text": {
+    "de": "Wir denken Formate neu und gehen dahin",
+    "en": "wo die Aufmerksamkeit ist.",
+    "": ""
+  },
+  "about_team_title": {
+    "de": "Das Team",
+    "en": "The Team",
+    "": ""
+  },
+  "about_team_text": {
+    "de": "Ein Kollektiv aus Strategen",
+    "en": "Kreativen und Machern.",
+    "": "creatives and doers."
   },
   "portfolio_title": {
     "de": "Unsere Talente",
@@ -397,46 +497,6 @@
   "legal_datenschutz": {
     "de": "Datenschutz",
     "en": "Privacy Policy",
-    "": ""
-  },
-  "unit_handwerk_name": {
-    "de": "Handwerksunit",
-    "en": "Craftsmanship Unit",
-    "": ""
-  },
-  "unit_handwerk_claim": {
-    "de": "Tradition trifft auf digitale Reichweite.",
-    "en": "Tradition meets digital reach.",
-    "": ""
-  },
-  "unit_handwerk_desc": {
-    "de": "Unsere Handwerksunit vereint echte Experten und Meister ihres Fachs. Wir bringen authentisches Handwerk in die digitale Welt und schaffen Verbindungen, die Bestand haben.",
-    "en": "Our craftsmanship unit brings together real experts and masters of their trade. We bring authentic craftsmanship to the digital world and create connections that last.",
-    "": ""
-  },
-  "unit_technik_name": {
-    "de": "Technik-Unit",
-    "en": "Tech Unit",
-    "": ""
-  },
-  "unit_technik_claim": {
-    "de": "Die Zukunft im digitalen Fokus.",
-    "en": "Focusing on the digital future.",
-    "": ""
-  },
-  "unit_technik_desc": {
-    "de": "Von Hardware-Experten bis zu Software-Pionieren: Unsere Technik-Unit repräsentiert die Speerspitze der digitalen Innovation und macht komplexe Themen für Millionen greifbar.",
-    "en": "From hardware experts to software pioneers: our tech unit represents the spearhead of digital innovation and makes complex topics tangible for millions.",
-    "": ""
-  },
-  "nav_handwerk": {
-    "de": "Handwerk",
-    "en": "Craft",
-    "": ""
-  },
-  "nav_technik": {
-    "de": "Technik",
-    "en": "Tech",
     "": ""
   }
 }
