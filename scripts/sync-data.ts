@@ -18,8 +18,10 @@ async function syncCreators() {
     return;
   }
 
-  console.log('Fetching Creators from Google Sheets...');
+  console.log(`Fetching Creators from: ${CREATORS_CSV_URL.substring(0, 50)}...`);
   const response = await axios.get(CREATORS_CSV_URL);
+  console.log('CSV Data received (first 100 chars):', response.data.substring(0, 100));
+  
   const records = parse(response.data, {
     columns: true,
     skip_empty_lines: true,
@@ -67,8 +69,10 @@ async function syncCases() {
     return;
   }
 
-  console.log('Fetching Cases from Google Sheets...');
+  console.log(`Fetching Cases from: ${CASES_CSV_URL.substring(0, 50)}...`);
   const response = await axios.get(CASES_CSV_URL);
+  console.log('CSV Data received (first 100 chars):', response.data.substring(0, 100));
+
   const records = parse(response.data, {
     columns: true,
     skip_empty_lines: true,
