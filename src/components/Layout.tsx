@@ -27,6 +27,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <nav className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-wide">
             <Link to="/" className={isActive('/')}>{t('nav_home')}</Link>
             <Link to="/portfolio" className={isActive('/portfolio')}>{t('nav_portfolio')}</Link>
+            <Link to="/handwerk" className={isActive('/handwerk')}>{t('nav_handwerk')}</Link>
+            <Link to="/technik" className={isActive('/technik')}>{t('nav_technik')}</Link>
             {/* <Link to="/cases" className={isActive('/cases')}>{t('nav_cases')}</Link> */}
             
             {/* Desktop Language Switcher */}
@@ -90,6 +92,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-zinc-100 p-6 flex flex-col space-y-6 text-center shadow-lg">
             <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_home')}</Link>
             <Link to="/portfolio" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_portfolio')}</Link>
+            <Link to="/handwerk" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_handwerk')}</Link>
+            <Link to="/technik" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_technik')}</Link>
             {/* <Link to="/cases" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_cases')}</Link> */}
             
             {/* Mobile Language Switcher */}
