@@ -46,6 +46,7 @@ async function syncCreators() {
     followers: sanitize(row.followers),
     imageUrl: row.imageUrl ? row.imageUrl.replace(/^\/vi\//, '/').replace(/^\//, '') : '',
     imageName: sanitize(row.image_name) || undefined,
+    canvaLink: row.canva_link || undefined,
     bio: sanitize(row.bio),
     platforms: row.platforms.split(',').map((p: string) => sanitize(p.trim())),
     platformStats: {

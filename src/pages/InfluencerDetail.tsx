@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { influencers } from '../data';
-import { ArrowLeft, Instagram, Youtube, Linkedin, Mail, Users, BarChart3, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Instagram, Youtube, Linkedin, Mail, Users, BarChart3, ExternalLink, FileText } from 'lucide-react';
 import SEO from '../components/SEO';
 import { getAssetPath } from '../utils/paths';
 
@@ -213,7 +213,21 @@ const InfluencerDetail: React.FC = () => {
 
             {/* Social Platforms */}
             <div className="mb-12">
-              <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">Social Profiles</h3>
+              <div className="flex justify-between items-center mb-4 border-b border-zinc-100 pb-2">
+                <h3 className="text-lg font-bold uppercase tracking-wide text-zinc-900">Social Profiles</h3>
+                {influencer.canvaLink && (
+                  <a 
+                    href={influencer.canvaLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-bold text-zinc-500 hover:text-black transition-colors group"
+                  >
+                    <FileText size={16} className="mr-2" />
+                    View Media Kit
+                    <ExternalLink size={12} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </a>
+                )}
+              </div>
               <div className="flex flex-wrap gap-4">
                 {influencer.platforms.map(platform => (
                   <a

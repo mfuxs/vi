@@ -18,6 +18,7 @@ export const InfluencerSchema = z.object({
   followers: z.string(),
   imageUrl: z.string(),
   imageName: z.string().optional(),
+  canvaLink: z.string().optional(),
   bio: z.string(),
   platforms: z.array(z.string()),
   platformStats: PlatformStatsSchema.optional(),

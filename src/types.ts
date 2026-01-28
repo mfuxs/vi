@@ -7,6 +7,7 @@ export interface Influencer {
   followers: string;
   imageUrl: string;
   imageName?: string;
+  canvaLink?: string;
   bio: string;
   platforms: string[];
   platformStats?: {
