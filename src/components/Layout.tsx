@@ -29,17 +29,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/portfolio" className={isActive('/portfolio')}>{t('nav_portfolio')}</Link>
             <Link to="/cases" className={isActive('/cases')}>{t('nav_cases')}</Link>
             
-            {/* Language Switcher */}
-            <div className="flex items-center space-x-2 border-l border-zinc-200 pl-8 mr-2">
+            {/* Desktop Language Switcher */}
+            <div className="flex items-center space-x-3 border-l border-zinc-200 pl-8 mr-4">
               <button 
                 onClick={() => setLanguage('de')} 
-                className={`transition-colors ${language === 'de' ? 'text-black font-bold' : 'text-zinc-400'}`}
-              >DE</button>
-              <span className="text-zinc-300">|</span>
+                title="Deutsch"
+                className={`w-6 h-6 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 border ${language === 'de' ? 'border-black ring-2 ring-zinc-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'}`}
+              >
+                <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#ffce44" d="M0 320h512v128H0z"/><path d="M0 64h512v128H0z"/><path fill="#d00" d="M0 192h512v128H0z"/></svg>
+              </button>
               <button 
                 onClick={() => setLanguage('en')} 
-                className={`transition-colors ${language === 'en' ? 'text-black font-bold' : 'text-zinc-400'}`}
-              >EN</button>
+                title="English"
+                className={`w-6 h-6 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 border ${language === 'en' ? 'border-black ring-2 ring-zinc-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'}`}
+              >
+                <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#00247d" d="M0 0h512v512H0z"/><path fill="#fff" d="M512 0v64L322 256l190 192v64h-64L256 322 64 512H0v-64l192-192L0 64V0h64l192 192L448 0z"/><path fill="#cf142b" d="M512 0v16L288 240h224v32H288l224 224v16h-16L272 288v224h-32V288L16 512H0v-16l224-224H0v-32h224L0 16V0h16l224 224V0h32v224L496 0z"/></svg>
+              </button>
             </div>
 
             <Link to="/contact" className="bg-black text-white px-5 py-2 rounded-full hover:bg-zinc-800 transition-all">
@@ -61,9 +66,25 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/cases" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium">{t('nav_cases')}</Link>
             
             {/* Mobile Language Switcher */}
-            <div className="flex justify-center space-x-4 py-2 border-y border-zinc-50">
-              <button onClick={() => { setLanguage('de'); setIsMenuOpen(false); }} className={language === 'de' ? 'font-bold' : ''}>Deutsch</button>
-              <button onClick={() => { setLanguage('en'); setIsMenuOpen(false); }} className={language === 'en' ? 'font-bold' : ''}>English</button>
+            <div className="flex justify-center items-center space-x-6 py-4 border-y border-zinc-100">
+              <button 
+                onClick={() => { setLanguage('de'); setIsMenuOpen(false); }} 
+                className={`flex items-center space-x-2 ${language === 'de' ? 'font-bold text-black' : 'text-zinc-400'}`}
+              >
+                <div className="w-6 h-6 rounded-full overflow-hidden border border-zinc-200">
+                  <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#ffce44" d="M0 320h512v128H0z"/><path d="M0 64h512v128H0z"/><path fill="#d00" d="M0 192h512v128H0z"/></svg>
+                </div>
+                <span>Deutsch</span>
+              </button>
+              <button 
+                onClick={() => { setLanguage('en'); setIsMenuOpen(false); }} 
+                className={`flex items-center space-x-2 ${language === 'en' ? 'font-bold text-black' : 'text-zinc-400'}`}
+              >
+                <div className="w-6 h-6 rounded-full overflow-hidden border border-zinc-200">
+                  <svg viewBox="0 0 512 512" className="w-full h-full"><path fill="#00247d" d="M0 0h512v512H0z"/><path fill="#fff" d="M512 0v64L322 256l190 192v64h-64L256 322 64 512H0v-64l192-192L0 64V0h64l192 192L448 0z"/><path fill="#cf142b" d="M512 0v16L288 240h224v32H288l224 224v16h-16L272 288v224h-32V288L16 512H0v-16l224-224H0v-32h224L0 16V0h16l224 224V0h32v224L496 0z"/></svg>
+                </div>
+                <span>English</span>
+              </button>
             </div>
 
             <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="bg-black text-white px-6 py-3 rounded-full mx-auto w-max">
