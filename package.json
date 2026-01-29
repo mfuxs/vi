@@ -16,6 +16,7 @@
     "prebuild": "npm run sync-translations && npm run sync-data && npm run sync-assets && npm run generate-sitemap"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
     "axios": "^1.13.4",
     "csv-parse": "^6.1.0",
     "framer-motion": "^12.29.2",
