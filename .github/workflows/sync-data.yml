@@ -62,6 +62,7 @@ jobs:
           # Wir übergeben die URLs hier nochmal, falls npm run build den sync erneut triggert (via prebuild)
           CREATORS_CSV_URL: ${{ secrets.CREATORS_CSV_URL }}
           CASES_CSV_URL: ${{ secrets.CASES_CSV_URL }}
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
