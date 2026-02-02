@@ -733,56 +733,19 @@
   },
   {
     "id": "16",
-    "name": "Alaeddin68",
-    "handle": "@alaeddin68",
-    "niche": "Entertainment / Comedy",
-    "category": "Entertainment",
-    "followers": "1.4M",
-    "imageUrl": "images/creators/alaeddin68.jpeg",
-    "bio": "Comedy creator known for his humorous TikToks and Instagram content, sharing relatable life hacks and sketches. ",
+    "name": "Jonah Plank",
+    "handle": "@jonahplank",
+    "niche": "Tech",
+    "category": "Tech",
+    "followers": "205k",
+    "imageUrl": "",
+    "bio": "",
     "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
+      ""
     ],
-    "platformStats": {
-      "tiktok": "865K",
-      "instagram": "103K",
-      "youtube": "481K"
-    },
+    "platformStats": {},
     "demographics": {
-      "gender": {
-        "male": "55%",
-        "female": "45%"
-      },
-      "age": [
-        {
-          "range": "13-17",
-          "percentage": "45%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "35%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "10%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "85%"
-        },
-        {
-          "country": "Turkey",
-          "percentage": "10%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "3%"
-        }
-      ]
+      "gender": {}
     }
   },
   {
