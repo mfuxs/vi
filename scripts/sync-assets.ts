@@ -93,7 +93,10 @@ async function run() {
         
         if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
         
-        creator.imageUrl = `images/creators/${webpFileName}`;
+        const newUrl = `images/creators/${webpFileName}`;
+        if (creator.imageUrl !== newUrl) {
+          creator.imageUrl = newUrl;
+        }
         updatedCount++;
       } catch (err: any) {
         console.error(`Failed to process image for ${creator.name}:`, err.message);

@@ -52,7 +52,7 @@ const InfluencerDetail: React.FC = () => {
     "name": influencer.name,
     "alternateName": influencer.handle,
     "description": influencer.bio,
-    "image": window.location.origin + getAssetPath(influencer.imageUrl),
+    "image": window.location.origin + getAssetPath(influencer.imageUrl || `images/creators/${influencer.handle.replace('@', '').toLowerCase()}.webp`),
     "jobTitle": influencer.niche,
     "worksFor": {
       "@type": "Organization",
@@ -60,12 +60,14 @@ const InfluencerDetail: React.FC = () => {
     }
   };
 
+  const displayImage = influencer.imageUrl || `images/creators/${influencer.handle.replace('@', '').toLowerCase()}.webp`;
+
   return (
     <div className="w-full min-h-screen bg-white">
       <SEO
         title={`${influencer.name} (${influencer.niche})`}
         description={influencer.bio || `${influencer.name}, Content Creator in ${influencer.niche}.`}
-        image={influencer.imageUrl}
+        image={displayImage}
         schema={influencerSchema}
       />
       
@@ -82,9 +84,16 @@ const InfluencerDetail: React.FC = () => {
           {/* Image Section */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-100 shadow-sm lg:sticky lg:top-24 self-start">
             <img
-              src={getAssetPath(influencer.imageUrl)}
+              src={getAssetPath(displayImage)}
               alt={influencer.name}
               className="w-full h-full object-cover"
+              onError={(e) => {
+                // If the webp doesn't exist, we could try others or a placeholder
+                const img = e.target as HTMLImageElement;
+                if (!img.src.includes('placeholder')) {
+                  img.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(influencer.name) + '&size=600&background=f4f4f5&color=a1a1aa';
+                }
+              }}
             />
             <div className="absolute top-4 right-4 flex gap-2">
               <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-black shadow-sm">
@@ -149,20 +158,22 @@ const InfluencerDetail: React.FC = () => {
             </div>
 
             {/* About */}
-            <div className="mb-10">
-              <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">{t('influencer_about')}</h3>
-              <p className="text-lg text-zinc-600 leading-relaxed font-light">
-                {influencer.bio}
-              </p>
-            </div>
+            {influencer.bio && (
+              <div className="mb-10">
+                <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">{t('influencer_about')}</h3>
+                <p className="text-lg text-zinc-600 leading-relaxed font-light">
+                  {influencer.bio}
+                </p>
+              </div>
+            )}
 
             {/* Demographics */}
-            {influencer.demographics && (
+            {influencer.demographics && (influencer.demographics.gender || influencer.demographics.age || influencer.demographics.topCountries) && (
               <div className="mb-10">
                 <h3 className="text-lg font-bold mb-4 uppercase tracking-wide text-zinc-900 border-b border-zinc-100 pb-2">{t('demographics_title')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-zinc-50 p-6 rounded-2xl border border-zinc-100">
                   <div className="space-y-6">
-                    {influencer.demographics.gender && (
+                    {influencer.demographics.gender && (influencer.demographics.gender.female || influencer.demographics.gender.male) && (
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_gender')}</p>
                         <div className="space-y-2">
@@ -185,7 +196,7 @@ const InfluencerDetail: React.FC = () => {
                         </div>
                       </div>
                     )}
-                    {influencer.demographics.age && (
+                    {influencer.demographics.age && influencer.demographics.age.length > 0 && (
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_age')}</p>
                         <div className="grid grid-cols-2 gap-3">
@@ -199,7 +210,7 @@ const InfluencerDetail: React.FC = () => {
                       </div>
                     )}
                   </div>
-                  {influencer.demographics.topCountries && (
+                  {influencer.demographics.topCountries && influencer.demographics.topCountries.length > 0 && (
                     <div>
                       <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-3">{t('demographics_countries')}</p>
                       <div className="space-y-3">
@@ -222,32 +233,36 @@ const InfluencerDetail: React.FC = () => {
             )}
 
             {/* Social & Media Kit */}
-            <div className="mb-12">
-              <div className="flex justify-between items-center mb-4 border-b border-zinc-100 pb-2">
-                <h3 className="text-lg font-bold uppercase tracking-wide text-zinc-900">{t('influencer_social_profiles')}</h3>
-                {influencer.canvaLink && (
-                  <a href={influencer.canvaLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-bold text-zinc-500 hover:text-black transition-colors group">
-                    <FileText size={16} className="mr-2" />
-                    {t('influencer_view_media_kit')}
-                    <ExternalLink size={12} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
+            {((influencer.platforms && influencer.platforms.length > 0) || influencer.canvaLink) && (
+              <div className="mb-12">
+                <div className="flex justify-between items-center mb-4 border-b border-zinc-100 pb-2">
+                  <h3 className="text-lg font-bold uppercase tracking-wide text-zinc-900">{t('influencer_social_profiles')}</h3>
+                  {influencer.canvaLink && (
+                    <a href={influencer.canvaLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-bold text-zinc-500 hover:text-black transition-colors group">
+                      <FileText size={16} className="mr-2" />
+                      {t('influencer_view_media_kit')}
+                      <ExternalLink size={12} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  )}
+                </div>
+                {influencer.platforms && influencer.platforms.length > 0 && (
+                  <div className="flex flex-wrap gap-4">
+                    {influencer.platforms.map(platform => (
+                      <a key={platform} href={getPlatformUrl(platform, influencer)} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 px-6 py-4 bg-white border border-zinc-200 rounded-xl shadow-sm hover:border-black hover:shadow-md transition-all group">
+                        {platform === 'Instagram' && <Instagram size={24} className="group-hover:text-pink-600 transition-colors" />}
+                        {platform === 'YouTube' && <Youtube size={24} className="group-hover:text-red-600 transition-colors" />}
+                        {platform === 'TikTok' && (
+                          <svg className="w-[24px] h-[24px] group-hover:text-black transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" /></svg>
+                        )}
+                        {platform === 'Linkedin' && <Linkedin size={24} className="group-hover:text-blue-700 transition-colors" />}
+                        <span className="font-semibold text-lg">{platform}</span>
+                        <ExternalLink size={14} className="text-zinc-300 group-hover:text-zinc-600 ml-1" />
+                      </a>
+                    ))}
+                  </div>
                 )}
               </div>
-              <div className="flex flex-wrap gap-4">
-                {influencer.platforms.map(platform => (
-                  <a key={platform} href={getPlatformUrl(platform, influencer)} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 px-6 py-4 bg-white border border-zinc-200 rounded-xl shadow-sm hover:border-black hover:shadow-md transition-all group">
-                    {platform === 'Instagram' && <Instagram size={24} className="group-hover:text-pink-600 transition-colors" />}
-                    {platform === 'YouTube' && <Youtube size={24} className="group-hover:text-red-600 transition-colors" />}
-                    {platform === 'TikTok' && (
-                      <svg className="w-[24px] h-[24px] group-hover:text-black transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" /></svg>
-                    )}
-                    {platform === 'Linkedin' && <Linkedin size={24} className="group-hover:text-blue-700 transition-colors" />}
-                    <span className="font-semibold text-lg">{platform}</span>
-                    <ExternalLink size={14} className="text-zinc-300 group-hover:text-zinc-600 ml-1" />
-                  </a>
-                ))}
-              </div>
-            </div>
+            )}
 
             {/* CTA */}
             <div className="pt-8 border-t border-zinc-100">
