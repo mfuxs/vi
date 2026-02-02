@@ -86,8 +86,7 @@ async function run() {
       try {
         await downloadFile(drive, driveFile.id, tempPath);
         
-        await sharp(tempPath)
-          .failOnError(false)
+        await sharp(tempPath, { failOn: 'none' })
           .resize(1200, 1500, { fit: 'cover', position: 'top' })
           .webp({ quality: 80 })
           .toFile(finalPath);
