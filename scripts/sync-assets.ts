@@ -56,8 +56,13 @@ async function run() {
 
   const driveMap = new Map();
   driveFiles.forEach(file => {
+    const fullSearchName = file.name!.toLowerCase();
     const nameWithoutExt = file.name!.split('.').slice(0, -1).join('.').toLowerCase();
-    driveMap.set(nameWithoutExt, file);
+    
+    driveMap.set(fullSearchName, file);
+    if (!driveMap.has(nameWithoutExt)) {
+      driveMap.set(nameWithoutExt, file);
+    }
   });
 
   if (!fs.existsSync(CREATORS_JSON_PATH)) {
@@ -73,8 +78,15 @@ async function run() {
 
   for (const creator of creators) {
     const cleanHandle = creator.handle.replace('@', '').toLowerCase();
-    const lookupName = (creator.imageName || cleanHandle).toLowerCase();
-    const driveFile = driveMap.get(lookupName);
+    // Lookup: First try imageName from sheet, then handle. Both case-insensitive.
+    let lookupName = (creator.imageName || cleanHandle).toLowerCase();
+    
+    // If the lookupName has an extension (like .png), also try searching without it
+    const lookupNameWithoutExt = lookupName.includes('.') 
+      ? lookupName.split('.').slice(0, -1).join('.') 
+      : lookupName;
+
+    const driveFile = driveMap.get(lookupName) || driveMap.get(lookupNameWithoutExt);
 
     if (driveFile) {
       const tempPath = path.join(ASSETS_DIR, `${cleanHandle}.tmp`);
