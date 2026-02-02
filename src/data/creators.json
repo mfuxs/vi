@@ -738,10 +738,13 @@
     "niche": "Tech",
     "category": "Tech",
     "followers": "205k",
-    "imageUrl": "images/creators/jonahplank.webp",
+    "imageUrl": "",
+    "imageName": "jonahplank.png",
     "bio": "",
     "platforms": [
-      ""
+      "TikTok",
+      "Instagram",
+      "YouTube"
     ],
     "platformStats": {},
     "demographics": {
