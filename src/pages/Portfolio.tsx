@@ -121,7 +121,7 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
     >
       <div className="aspect-[4/5] overflow-hidden bg-zinc-100 relative">
         <img
-          src={getAssetPath(data.imageUrl)}
+          src={getAssetPath(data.imageUrl || `images/creators/${data.handle.replace('@', '').toLowerCase()}.webp`)}
           alt={data.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           onError={(e) => {
