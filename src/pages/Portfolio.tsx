@@ -124,6 +124,12 @@ const InfluencerCard: React.FC<{ data: Influencer }> = ({ data }) => {
           src={getAssetPath(data.imageUrl)}
           alt={data.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          onError={(e) => {
+            const img = e.target as HTMLImageElement;
+            if (!img.src.includes('placeholder')) {
+              img.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(data.name) + '&size=600&background=f4f4f5&color=a1a1aa';
+            }
+          }}
         />
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-black shadow-sm">
           {data.category}
