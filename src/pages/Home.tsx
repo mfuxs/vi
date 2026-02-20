@@ -119,23 +119,30 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredInfluencers.map((influencer, idx) => (
-              <motion.div
-                key={influencer.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-              >
-                <Link to={`/portfolio/${influencer.id}`} className="group block">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-zinc-100 mb-4 shadow-sm">
-                    <img src={getAssetPath(influencer.imageUrl)} alt={influencer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  </div>
-                  <h3 className="text-lg font-bold group-hover:text-zinc-600 transition-colors">{influencer.name}</h3>
-                  <p className="text-sm text-zinc-500">{influencer.niche}</p>
-                </Link>
-              </motion.div>
-            ))}
+            {featuredInfluencers.map((influencer, idx) => {
+              // Fallback aligned with InfluencerDetail:
+              // if imageUrl is empty in JSON, load by handle-based file name.
+              // Example: @dermoebelbock -> images/creators/dermoebelbock.webp
+              const displayImage = influencer.imageUrl || `images/creators/${influencer.handle.replace('@', '').toLowerCase()}.webp`;
+
+              return (
+                <motion.div
+                  key={influencer.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <Link to={`/portfolio/${influencer.id}`} className="group block">
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-zinc-100 mb-4 shadow-sm">
+                      <img src={getAssetPath(displayImage)} alt={influencer.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <h3 className="text-lg font-bold group-hover:text-zinc-600 transition-colors">{influencer.name}</h3>
+                    <p className="text-sm text-zinc-500">{influencer.niche}</p>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

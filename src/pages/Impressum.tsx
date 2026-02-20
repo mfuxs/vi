@@ -4,6 +4,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Impressum: React.FC = () => {
   const { t } = useLanguage();
+  const impressumText = t('legal_impressum_text');
+  const fallbackText = 'Bitte Impressumstext in Google Sheets (legal_impressum_text) hinterlegen.';
+  const resolvedImpressumText = impressumText === 'legal_impressum_text' ? fallbackText : impressumText;
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -12,7 +15,7 @@ const Impressum: React.FC = () => {
         <h1 className="text-4xl font-bold mb-8">Impressum</h1>
         <div className="prose prose-zinc max-w-none">
           <p className="whitespace-pre-line text-lg text-zinc-600">
-            {t('legal_impressum_text') || 'Bitte Impressumstext in Google Sheets (legal_impressum_text) hinterlegen.'}
+            {resolvedImpressumText}
           </p>
         </div>
       </div>
