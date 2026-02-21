@@ -31,6 +31,12 @@ Eine moderne, hochperformante Influencer-Management-Plattform, die als "Headless
 ### 1. Creator & Texte pflegen
 Änderungen in den verknüpften Google Sheets vornehmen und die GitHub Action **"Sync Data and Deploy"** starten.
 
+**Neue Spalte für Creator-Detailseite (Kontakt-CTA):**
+- Lege im Creator-Sheet eine zusätzliche Spalte mit dem Namen **`E-Mail einfach`** an (alternativ wird auch `email_simple` akzeptiert, falls die CSV/Sheet-Spalten auf Englisch geführt werden).
+- Wenn in dieser Spalte eine gültige E-Mail-Adresse eingetragen ist, wird diese beim Sync in `creators.json` als `emailSimple` gespeichert.
+- Auf der Creator-Detailseite öffnet der Button **„Jetzt kontaktiere“** dann direkt ein `mailto:` für diese individuelle Creator-Mail.
+- Wenn kein Wert vorhanden ist, bleibt das Fallback unverändert: Der Button führt weiterhin zur allgemeinen Kontaktseite `/contact`.
+
 ### 2. Bilder aktualisieren
 Bilder einfach in den Google Drive Ordner hochladen. Dateiname muss dem Handle (z.B. `affeaufbike.jpg`) oder dem Eintrag in der Spalte `image_name` entsprechen.
 
