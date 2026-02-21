@@ -1,54 +1,50 @@
 [
   {
     "id": "1",
-    "name": "Affeaufbike",
-    "handle": "@affeaufbike",
-    "niche": "Travel / Outdoor",
-    "category": "Lifestyle & Health",
-    "followers": "1.4M",
-    "imageUrl": "images/creators/affeaufbike.webp",
-    "bio": "Adventurer and author known for her solo motorcycle world tours and authentic storytelling.",
+    "name": "Der Landwerker",
+    "handle": "@derlandwerker",
+    "niche": "Craftsmanship",
+    "category": "Handwerk & DIY",
+    "followers": "59.5K",
+    "imageUrl": "images/creators/derlandwerker.webp",
+    "bio": "",
     "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
+      "Instagram"
     ],
     "platformStats": {
-      "tiktok": "652.4K",
-      "instagram": "533K",
-      "youtube": "234K"
+      "instagram": "59.5K"
     },
     "demographics": {
       "gender": {
-        "male": "35%",
-        "female": "65%"
+        "male": "85%",
+        "female": "15%"
       },
       "age": [
         {
-          "range": "18-24",
+          "range": "25-34",
           "percentage": "45%"
         },
         {
-          "range": "25-34",
+          "range": "35-44",
           "percentage": "35%"
         },
         {
-          "range": "35-44",
+          "range": "45+",
           "percentage": "10%"
         }
       ],
       "topCountries": [
         {
           "country": "Germany",
-          "percentage": "85%"
+          "percentage": "98%"
         },
         {
           "country": "Austria",
-          "percentage": "10%"
+          "percentage": "1%"
         },
         {
           "country": "Switzerland",
-          "percentage": "5%"
+          "percentage": "1%"
         }
       ]
     }
@@ -261,56 +257,6 @@
         {
           "country": "Switzerland",
           "percentage": "1%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "7",
-    "name": "Claudelle.loves",
-    "handle": "@claudelle.loves",
-    "niche": "Lifestyle / Health",
-    "category": "Lifestyle & Health",
-    "followers": "213K",
-    "imageUrl": "images/creators/claudelle.loves.webp",
-    "bio": "Actress and wellness creator sharing insights on healthy living, self-care, and personal growth.",
-    "platforms": [
-      "Instagram"
-    ],
-    "platformStats": {
-      "instagram": "213K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "10%",
-        "female": "90%"
-      },
-      "age": [
-        {
-          "range": "35-44",
-          "percentage": "40%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "35%"
-        },
-        {
-          "range": "45+",
-          "percentage": "20%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "92%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "4%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "4%"
         }
       ]
     }
@@ -677,56 +623,6 @@
         {
           "country": "Switzerland",
           "percentage": "2%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "15",
-    "name": "Der Landwerker",
-    "handle": "@derlandwerker",
-    "niche": "Craftsmanship",
-    "category": "Handwerk & DIY",
-    "followers": "59.5K",
-    "imageUrl": "images/creators/derlandwerker.webp",
-    "bio": "",
-    "platforms": [
-      "Instagram"
-    ],
-    "platformStats": {
-      "instagram": "59.5K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "85%",
-        "female": "15%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "45%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "35%"
-        },
-        {
-          "range": "45+",
-          "percentage": "10%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "98%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "1%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "1%"
         }
       ]
     }
@@ -1330,60 +1226,6 @@
         {
           "country": "Austria",
           "percentage": "6%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "4%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "28",
-    "name": "Lucylacht",
-    "handle": "@lucylacht",
-    "niche": "DIY/Lifestyle",
-    "category": "Handwerk & DIY",
-    "followers": "2.4M",
-    "imageUrl": "images/creators/lucylacht.webp",
-    "bio": "known for her positive and creative content, including DIY projects, lifestyle, fitness, and relationship topics. She first gained attention with her tufting rug DIYs and has since built a loyal community. She combines authenticity and approachability to stand out in the content space.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "1.8M",
-      "instagram": "246K",
-      "youtube": "395K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "12%",
-        "female": "88%"
-      },
-      "age": [
-        {
-          "range": "18-24",
-          "percentage": "50%"
-        },
-        {
-          "range": "13-17",
-          "percentage": "25%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "20%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "92%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "4%"
         },
         {
           "country": "Switzerland",
