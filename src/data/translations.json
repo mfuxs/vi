@@ -400,7 +400,11 @@
     "en": "Privacy Policy"
   },
   "legal_impressum_text": {
-    "de": "Versmannstraße 2\n20457 Hamburg\n+49 (0) 40 / 22 86 38 10\ninfo@insocial-media.de\n\nGeschäftsführer: William Riegger\nRegistergericht: AG Hamburg\nRegisternummer: HRB 138969\nUSt-IDNr: DE30331002",
+    "de": "inSocial Media GmbH Versmannstraße 2\n20457 Hamburg\n+49 (0) 40 / 22 86 38 10\ninfo@insocial-media.de\n\nGeschäftsführer: William Riegger\nRegistergericht: AG Hamburg\nRegisternummer: HRB 138969\nUSt-IDNr: DE30331002",
+    "en": ""
+  },
+  "legal_datenschutz_text": {
+    "de": "",
     "en": ""
   }
 }
