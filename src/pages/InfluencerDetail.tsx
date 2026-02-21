@@ -61,6 +61,7 @@ const InfluencerDetail: React.FC = () => {
   };
 
   const displayImage = influencer.imageUrl || `images/creators/${influencer.handle.replace('@', '').toLowerCase()}.webp`;
+  const bookingLink = influencer.emailSimple ? `mailto:${influencer.emailSimple}` : '/contact';
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -267,11 +268,19 @@ const InfluencerDetail: React.FC = () => {
             {/* CTA */}
             <div className="pt-8 border-t border-zinc-100">
               <h3 className="text-2xl font-bold mb-6">{t('influencer_interested_in_working')} {influencer.name.split(' ')[0]}?</h3>
-              <Link to="/contact" className="w-full md:w-auto inline-flex items-center justify-center bg-black text-white px-10 py-5 rounded-full font-bold hover:bg-zinc-800 transition-all text-lg group shadow-lg hover:shadow-xl">
-                <Mail size={22} className="mr-3" />
-                {t('influencer_request_booking')}
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
+              {influencer.emailSimple ? (
+                <a href={bookingLink} className="w-full md:w-auto inline-flex items-center justify-center bg-black text-white px-10 py-5 rounded-full font-bold hover:bg-zinc-800 transition-all text-lg group shadow-lg hover:shadow-xl">
+                  <Mail size={22} className="mr-3" />
+                  {t('influencer_request_booking')}
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+              ) : (
+                <Link to={bookingLink} className="w-full md:w-auto inline-flex items-center justify-center bg-black text-white px-10 py-5 rounded-full font-bold hover:bg-zinc-800 transition-all text-lg group shadow-lg hover:shadow-xl">
+                  <Mail size={22} className="mr-3" />
+                  {t('influencer_request_booking')}
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                </Link>
+              )}
             </div>
           </div>
         </div>
