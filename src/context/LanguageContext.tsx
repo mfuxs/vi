@@ -9,6 +9,25 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
+type TranslationMap = Record<string, string>;
+
+const getTranslationByLanguage = (
+  translations: TranslationMap,
+  language: string,
+): string | undefined => {
+  // Primary lookup for exact language key.
+  if (translations[language]) {
+    return translations[language];
+  }
+
+  // Defensive fallback: some imported translation columns contain trailing
+  // spaces (e.g. "de "), so we normalize lookup keys before giving up.
+  const normalizedEntries = Object.entries(translations).map(([lang, value]) => [lang.trim(), value] as const);
+  const normalized = Object.fromEntries(normalizedEntries) as TranslationMap;
+
+  return normalized[language] || normalized.de;
+};
+
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -20,12 +39,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [language]);
 
   const t = (key: string): string => {
-    const translations = (translationsData as any)[key];
+    const translations = (translationsData as Record<string, TranslationMap>)[key];
     if (!translations) {
       console.warn(`Translation key missing: ${key}`);
       return key;
     }
-    return translations[language] || translations['de'] || key;
+
+    return getTranslationByLanguage(translations, language) || key;
   };
 
   return (
