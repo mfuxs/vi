@@ -1290,6 +1290,58 @@
     }
   },
   {
+    "id": "30",
+    "name": "Michafritz",
+    "handle": "@michafritz",
+    "niche": "Education / Politics",
+    "category": "Lifestyle & Health",
+    "followers": "320K",
+    "imageUrl": "images/creators/michafritz.webp",
+    "bio": "Michael Fritz (@michafritz) is a conceptual activist and co-founder of Viva con Agua, a global network improving access to clean water and sanitation for millions since 2006. The organization operates on a unique \"All Profit\" model, ensuring shared benefits for everyone involved.",
+    "platforms": [
+      "TikTok",
+      "Instagram"
+    ],
+    "platformStats": {
+      "tiktok": "244K",
+      "instagram": "76K"
+    },
+    "demographics": {
+      "gender": {
+        "male": "50%",
+        "female": "50%"
+      },
+      "age": [
+        {
+          "range": "25-34",
+          "percentage": "40%"
+        },
+        {
+          "range": "35-44",
+          "percentage": "35%"
+        },
+        {
+          "range": "45+",
+          "percentage": "15%"
+        }
+      ],
+      "topCountries": [
+        {
+          "country": "Germany",
+          "percentage": "95%"
+        },
+        {
+          "country": "Austria",
+          "percentage": "3%"
+        },
+        {
+          "country": "Switzerland",
+          "percentage": "2%"
+        }
+      ]
+    }
+  },
+  {
     "id": "31",
     "name": "Moris.odndhl",
     "handle": "@moris.odndhl",
