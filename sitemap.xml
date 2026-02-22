@@ -157,6 +157,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vertical-influence.de/portfolio/30</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vertical-influence.de/portfolio/31</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
