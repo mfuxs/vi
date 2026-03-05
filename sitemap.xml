@@ -92,6 +92,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vertical-influence.de/portfolio/15</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vertical-influence.de/portfolio/16</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -152,6 +157,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vertical-influence.de/portfolio/28</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vertical-influence.de/portfolio/29</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -167,62 +177,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vertical-influence.de/portfolio/32</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vertical-influence.de/portfolio/33</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vertical-influence.de/portfolio/34</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/35</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/36</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/37</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/38</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/40</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/41</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/42</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/43</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/44</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/45</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
