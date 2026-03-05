@@ -421,56 +421,6 @@
   },
   {
     "id": "11",
-    "name": "Jenni vom Dach",
-    "handle": "@jennivomdach",
-    "niche": "Craftsmanship",
-    "category": "Handwerk & DIY",
-    "followers": "116K",
-    "imageUrl": "images/creators/jennivomdach.webp",
-    "bio": "German master roofer and creator from Munich. She shares authentic insights into her profession, highlighting the craftsmanship and artistry involved in roofing. Her content resonates with a wide audience, showcasing the intricate details of her work and the skills required. ",
-    "platforms": [
-      "Instagram"
-    ],
-    "platformStats": {
-      "instagram": "116K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "45%",
-        "female": "55%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "45%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "25%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "20%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "95%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "3%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "2%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "12",
     "name": "Nikolaj.lu",
     "handle": "@nikolaj.lu",
     "niche": "Entertainment / Comedy",
@@ -524,7 +474,7 @@
     }
   },
   {
-    "id": "13",
+    "id": "12",
     "name": "Schreinerin Mara",
     "handle": "@schreinerinmara",
     "niche": "Craftsmanship",
@@ -576,7 +526,7 @@
     }
   },
   {
-    "id": "14",
+    "id": "13",
     "name": "Tischlerimkopf",
     "handle": "@tischlerimkopf",
     "niche": "Craftsmanship",
@@ -628,7 +578,7 @@
     }
   },
   {
-    "id": "16",
+    "id": "14",
     "name": "Jonah Plank",
     "handle": "@jonahplank",
     "niche": "Tech",
@@ -647,7 +597,7 @@
     }
   },
   {
-    "id": "17",
+    "id": "15",
     "name": "Anna_mclean",
     "handle": "@anna_mclean",
     "niche": "Travel / DIY",
@@ -701,57 +651,7 @@
     }
   },
   {
-    "id": "18",
-    "name": "Bianci0409",
-    "handle": "@bianci0409",
-    "niche": "Lifestyle",
-    "category": "Lifestyle & Health",
-    "followers": "351K",
-    "imageUrl": "images/creators/bianci0409.webp",
-    "bio": "Momfluencer sharing authentic family moments, lifestyle insights, and candid discussions with her brother Julian Claßen.",
-    "platforms": [
-      "Instagram"
-    ],
-    "platformStats": {
-      "instagram": "351K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "5%",
-        "female": "95%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "55%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "30%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "10%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "94%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "4%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "2%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "19",
+    "id": "16",
     "name": "Bluebrywow",
     "handle": "@bluebrywow",
     "niche": "Tech",
@@ -805,7 +705,7 @@
     }
   },
   {
-    "id": "20",
+    "id": "17",
     "name": "Crackingchris",
     "handle": "@crackingchris",
     "niche": "Health / Sports",
@@ -859,7 +759,7 @@
     }
   },
   {
-    "id": "21",
+    "id": "18",
     "name": "Dasistjay",
     "handle": "@dasistjay",
     "niche": "Tech",
@@ -913,7 +813,7 @@
     }
   },
   {
-    "id": "22",
+    "id": "19",
     "name": "Der Schaeng",
     "handle": "@derschaeng",
     "niche": "Entertainment / Comedy",
@@ -965,7 +865,7 @@
     }
   },
   {
-    "id": "23",
+    "id": "20",
     "name": "FahrlehrerLukas",
     "handle": "@fahrlehrerlukas",
     "niche": "Infotainment / Education",
@@ -1019,7 +919,7 @@
     }
   },
   {
-    "id": "24",
+    "id": "21",
     "name": "iliasbsd",
     "handle": "@iliasbsd",
     "niche": "Tech",
@@ -1073,115 +973,7 @@
     }
   },
   {
-    "id": "25",
-    "name": "JenlovesTech",
-    "handle": "@jenlovestech",
-    "niche": "Tech",
-    "category": "Tech",
-    "followers": "25.4K",
-    "imageUrl": "images/creators/jenlovestech.webp",
-    "bio": "Jen, known as @jen_loves_tech, is a leading female tech creator in the German market, offering clear and relatable gadget reviews and smartphone tips that stand out in a male-dominated tech space.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "1.1K",
-      "instagram": "2.5K",
-      "youtube": "21.8K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "15%",
-        "female": "85%"
-      },
-      "age": [
-        {
-          "range": "18-24",
-          "percentage": "40%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "35%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "15%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "92%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "4%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "4%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "26",
-    "name": "Julienco_",
-    "handle": "@julienco_",
-    "niche": "Entertainment / Comedy",
-    "category": "Entertainment",
-    "followers": "13.2M",
-    "imageUrl": "images/creators/julienco_.webp",
-    "bio": "One of Germany’s leading creators, famous for his humorous lifestyle content, pranks, and vlogs. With millions of followers across Instagram and TikTok, he has built a strong, authentic connection with a wide audience. Julienco is recognized for blending entertainment with personal storytelling, making him a prominent figure in the German social media landscape. Beyond content creation, he is also an entrepreneur, launching successful ventures like Juizy Wow.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "3.1M",
-      "instagram": "6.3M",
-      "youtube": "3.9M"
-    },
-    "demographics": {
-      "gender": {
-        "male": "48%",
-        "female": "52%"
-      },
-      "age": [
-        {
-          "range": "18-24",
-          "percentage": "45%"
-        },
-        {
-          "range": "13-17",
-          "percentage": "30%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "20%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "90%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "5%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "5%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "27",
+    "id": "22",
     "name": "Kirafin",
     "handle": "@kirafin",
     "niche": "Entertainment",
@@ -1235,7 +1027,7 @@
     }
   },
   {
-    "id": "29",
+    "id": "23",
     "name": "Mariusfuxs",
     "handle": "@mariusfuxs",
     "niche": "Tech",
@@ -1290,7 +1082,7 @@
     }
   },
   {
-    "id": "30",
+    "id": "24",
     "name": "Michafritz",
     "handle": "@michafritz",
     "niche": "Education / Politics",
@@ -1343,7 +1135,7 @@
     }
   },
   {
-    "id": "31",
+    "id": "25",
     "name": "Moris.odndhl",
     "handle": "@moris.odndhl",
     "niche": "Craftsmanship",
@@ -1397,7 +1189,7 @@
     }
   },
   {
-    "id": "33",
+    "id": "26",
     "name": "Paulascakefactory",
     "handle": "@paulascakefactory",
     "niche": "Craftsmanship",
@@ -1447,7 +1239,7 @@
     }
   },
   {
-    "id": "34",
+    "id": "27",
     "name": "Paulherter",
     "handle": "@paulherter",
     "niche": "Tech",
@@ -1501,61 +1293,7 @@
     }
   },
   {
-    "id": "35",
-    "name": "Rafaelneugart",
-    "handle": "@rafaelneugart",
-    "niche": "Lifestyle / Comedy",
-    "category": "Entertainment",
-    "followers": "2.3M",
-    "imageUrl": "images/creators/rafaelneugart.webp",
-    "bio": "Creator celebrated for his dynamic blend of comedy, adventure, and lifestyle content. With over 1.4 million subscribers on YouTube and more than 850,000 followers on Instagram, he captivates a broad audience with his engaging videos and authentic storytelling. ",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "35.6K",
-      "instagram": "835K",
-      "youtube": "1.4M"
-    },
-    "demographics": {
-      "gender": {
-        "male": "58%",
-        "female": "42%"
-      },
-      "age": [
-        {
-          "range": "18-24",
-          "percentage": "45%"
-        },
-        {
-          "range": "13-17",
-          "percentage": "35%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "15%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "90%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "5%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "5%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "36",
+    "id": "28",
     "name": "RGBCEM",
     "handle": "@rgbcem",
     "niche": "Tech",
@@ -1609,7 +1347,7 @@
     }
   },
   {
-    "id": "37",
+    "id": "29",
     "name": "Schliingeel",
     "handle": "@schliingeel",
     "niche": "Entertainment / Education",
@@ -1663,111 +1401,7 @@
     }
   },
   {
-    "id": "38",
-    "name": "Sinyas.thecookingdad",
-    "handle": "@sinyas.thecookingdad",
-    "niche": "Cooking",
-    "category": "Lifestyle & Health",
-    "followers": "688K",
-    "imageUrl": "images/creators/sinyas.thecookingdad.webp",
-    "bio": "German creator known for engaging cooking tutorials, blending humor and music.",
-    "platforms": [
-      "TikTok",
-      "Instagram"
-    ],
-    "platformStats": {
-      "tiktok": "601K",
-      "instagram": "87K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "48%",
-        "female": "52%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "45%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "30%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "15%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "94%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "3%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "3%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "40",
-    "name": "Sophiatokk",
-    "handle": "@sophiatokk",
-    "niche": "Entertainment",
-    "category": "Entertainment",
-    "followers": "258.4K",
-    "imageUrl": "images/creators/sophiatokk.webp",
-    "bio": "German content creator known for humorous and relatable videos on everyday topics.",
-    "platforms": [
-      "TikTok",
-      "Instagram"
-    ],
-    "platformStats": {
-      "tiktok": "219K",
-      "instagram": "39.4K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "15%",
-        "female": "85%"
-      },
-      "age": [
-        {
-          "range": "18-24",
-          "percentage": "55%"
-        },
-        {
-          "range": "13-17",
-          "percentage": "25%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "15%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "95%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "3%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "2%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "41",
+    "id": "30",
     "name": "Spybas",
     "handle": "@spybas",
     "niche": "Entertainment / Education",
@@ -1821,7 +1455,7 @@
     }
   },
   {
-    "id": "42",
+    "id": "31",
     "name": "TikTokTechnik",
     "handle": "@tiktoktechnik",
     "niche": "Tech",
@@ -1875,7 +1509,7 @@
     }
   },
   {
-    "id": "43",
+    "id": "32",
     "name": "Mike Imos",
     "handle": "@mikeimos",
     "niche": "Craftsmanship",
@@ -1926,7 +1560,7 @@
     }
   },
   {
-    "id": "44",
+    "id": "33",
     "name": "Dachdeckerin Fabienne",
     "handle": "@dachdeckerinfabienne",
     "niche": "Craftsmanship",
@@ -1977,7 +1611,7 @@
     }
   },
   {
-    "id": "45",
+    "id": "34",
     "name": "Rene Lang",
     "handle": "@renelang",
     "niche": "Craftsmanship",
