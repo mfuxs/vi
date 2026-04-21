@@ -651,60 +651,6 @@
     }
   },
   {
-    "id": "16",
-    "name": "Bluebrywow",
-    "handle": "@bluebrywow",
-    "niche": "Tech",
-    "category": "Tech",
-    "followers": "1.4M",
-    "imageUrl": "images/creators/bluebrywow.webp",
-    "bio": "Tech creator known for smartphone hacks, app tips, and viral gadget content, with a strong presence on TikTok and Instagram.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "1.1M",
-      "instagram": "223K",
-      "youtube": "63.1K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "65%",
-        "female": "35%"
-      },
-      "age": [
-        {
-          "range": "13-17",
-          "percentage": "50%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "30%"
-        },
-        {
-          "range": "25-34",
-          "percentage": "10%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "82%"
-        },
-        {
-          "country": "USA",
-          "percentage": "10%"
-        },
-        {
-          "country": "UK",
-          "percentage": "3%"
-        }
-      ]
-    }
-  },
-  {
     "id": "17",
     "name": "Crackingchris",
     "handle": "@crackingchris",
