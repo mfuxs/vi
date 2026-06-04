@@ -1,55 +1,5 @@
 [
   {
-    "id": "1",
-    "name": "Der Landwerker",
-    "handle": "@derlandwerker",
-    "niche": "Craftsmanship",
-    "category": "Handwerk & DIY",
-    "followers": "59.5K",
-    "imageUrl": "images/creators/derlandwerker.webp",
-    "bio": "",
-    "platforms": [
-      "Instagram"
-    ],
-    "platformStats": {
-      "instagram": "59.5K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "85%",
-        "female": "15%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "45%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "35%"
-        },
-        {
-          "range": "45+",
-          "percentage": "10%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "98%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "1%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "1%"
-        }
-      ]
-    }
-  },
-  {
     "id": "2",
     "name": "Beac_basti",
     "handle": "@beac_basti",
@@ -646,60 +596,6 @@
         {
           "country": "Switzerland",
           "percentage": "5%"
-        }
-      ]
-    }
-  },
-  {
-    "id": "17",
-    "name": "Crackingchris",
-    "handle": "@crackingchris",
-    "niche": "Health / Sports",
-    "category": "Lifestyle & Health",
-    "followers": "1.1M",
-    "imageUrl": "images/creators/crackingchris.webp",
-    "bio": "Physiotherapist and creator sharing manual therapy techniques, self-help tips, and humorous content on body wellness.",
-    "platforms": [
-      "TikTok",
-      "Instagram",
-      "YouTube"
-    ],
-    "platformStats": {
-      "tiktok": "497.6K",
-      "instagram": "529K",
-      "youtube": "36.3K"
-    },
-    "demographics": {
-      "gender": {
-        "male": "50%",
-        "female": "50%"
-      },
-      "age": [
-        {
-          "range": "25-34",
-          "percentage": "45%"
-        },
-        {
-          "range": "35-44",
-          "percentage": "25%"
-        },
-        {
-          "range": "18-24",
-          "percentage": "20%"
-        }
-      ],
-      "topCountries": [
-        {
-          "country": "Germany",
-          "percentage": "88%"
-        },
-        {
-          "country": "Austria",
-          "percentage": "6%"
-        },
-        {
-          "country": "Switzerland",
-          "percentage": "6%"
         }
       ]
     }
@@ -1568,10 +1464,7 @@
     "platforms": [
       ""
     ],
-    "platformStats": {
-      "tiktok": "TikTok",
-      "instagram": "146K"
-    },
+    "platformStats": {},
     "demographics": {
       "gender": {
         "male": "82%",
@@ -1605,6 +1498,23 @@
           "percentage": "1%"
         }
       ]
+    }
+  },
+  {
+    "id": "35",
+    "name": "Martin Dunkelmann",
+    "handle": "@martindunkelmann",
+    "niche": "Food/Industry/Mobility",
+    "category": "Entertainment",
+    "followers": "29k",
+    "imageUrl": "images/creators/martindunkelmann.webp",
+    "bio": "",
+    "platforms": [
+      ""
+    ],
+    "platformStats": {},
+    "demographics": {
+      "gender": {}
     }
   }
 ]
