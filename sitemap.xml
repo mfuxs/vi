@@ -32,11 +32,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vertical-influence.de/portfolio/1</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vertical-influence.de/portfolio/2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -93,11 +88,6 @@
   </url>
   <url>
     <loc>https://vertical-influence.de/portfolio/15</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vertical-influence.de/portfolio/17</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -183,6 +173,11 @@
   </url>
   <url>
     <loc>https://vertical-influence.de/portfolio/34</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vertical-influence.de/portfolio/35</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
